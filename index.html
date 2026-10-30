@@ -6,6 +6,9 @@
     <title>Mouad MOUJTAHID | Portfolio - BUT Informatique & DU IA</title>
     <meta name="description" content="Portfolio de Mouad MOUJTAHID, étudiant en deuxième année de BUT Informatique et DU Intelligence Artificielle à l'IUT de Bordeaux. Recherche de stage de 10 semaines à partir du 18 janvier 2027.">
     
+    <!-- Favicon personnalisé "MM" (Violet / Rose) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%239333ea'/><stop offset='100%25' stop-color='%23ec4899'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='64' font-family='Arial, sans-serif' font-size='44' font-weight='bold' fill='white' text-anchor='middle'>MM</text></svg>">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -28,10 +31,10 @@
                     },
                     colors: {
                         dark: {
-                            950: '#060913',
-                            900: '#0B101E',
-                            800: '#111827',
-                            700: '#1E293B',
+                            950: '#080510',
+                            900: '#0E091C',
+                            800: '#150D2A',
+                            700: '#241744',
                         }
                     }
                 }
@@ -41,7 +44,7 @@
 
     <style>
         body {
-            background-color: #060913;
+            background-color: #080510;
             color: #F8FAFC;
             overflow-x: hidden;
         }
@@ -49,12 +52,12 @@
         .bg-grid-pattern {
             background-size: 42px 42px;
             background-image: 
-                linear-gradient(to right, rgba(99, 102, 241, 0.045) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(99, 102, 241, 0.045) 1px, transparent 1px);
+                linear-gradient(to right, rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(236, 72, 153, 0.05) 1px, transparent 1px);
         }
 
         .glass-card {
-            background: rgba(15, 23, 42, 0.72);
+            background: rgba(18, 11, 34, 0.76);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -62,20 +65,20 @@
         }
 
         .glass-card:hover {
-            border-color: rgba(96, 165, 250, 0.35);
-            box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.18);
+            border-color: rgba(236, 72, 153, 0.4);
+            box-shadow: 0 20px 40px -15px rgba(168, 85, 247, 0.22);
             transform: translateY(-2px);
         }
 
         .glass-nav {
-            background: rgba(6, 9, 19, 0.85);
+            background: rgba(8, 5, 16, 0.86);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.14);
         }
 
         .text-gradient {
-            background: linear-gradient(135deg, #60A5FA 0%, #818CF8 50%, #22D3EE 100%);
+            background: linear-gradient(135deg, #C084FC 0%, #A855F7 45%, #F472B6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -92,14 +95,14 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #060913;
+            background: #080510;
         }
         ::-webkit-scrollbar-thumb {
-            background: #1E293B;
+            background: #241744;
             border-radius: 9999px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #3B82F6;
+            background: #A855F7;
         }
 
         .reveal {
@@ -113,24 +116,24 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased selection:bg-blue-500 selection:text-white bg-grid-pattern relative">
+<body class="font-sans antialiased selection:bg-fuchsia-500 selection:text-white bg-grid-pattern relative">
 
-    <!-- Halos lumineux d'arrière-plan -->
-    <div class="fixed top-[-10%] left-[-10%] w-[450px] h-[450px] rounded-full bg-blue-600/12 blur-[140px] pointer-events-none z-0"></div>
-    <div class="fixed bottom-[-10%] right-[-10%] w-[450px] h-[450px] rounded-full bg-indigo-600/12 blur-[150px] pointer-events-none z-0"></div>
+    <!-- Halos lumineux d'arrière-plan Violet / Rose -->
+    <div class="fixed top-[-10%] left-[-10%] w-[480px] h-[480px] rounded-full bg-purple-600/15 blur-[150px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[480px] h-[480px] rounded-full bg-pink-600/15 blur-[150px] pointer-events-none z-0"></div>
 
     <!-- ==================== NAVIGATION ==================== -->
     <header class="fixed top-0 left-0 right-0 z-40 glass-nav transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="#accueil" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 via-indigo-500 to-cyan-400 p-[1px] shadow-lg shadow-blue-500/20">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 via-purple-500 to-pink-500 p-[1px] shadow-lg shadow-purple-500/25">
                     <div class="w-full h-full bg-dark-950 rounded-[11px] flex items-center justify-center font-mono font-bold text-base text-white group-hover:bg-transparent transition-colors">
                         MM
                     </div>
                 </div>
                 <div>
-                    <span class="font-bold tracking-tight text-white text-base sm:text-lg block leading-none">Mouad <span class="text-blue-400">MOUJTAHID</span></span>
+                    <span class="font-bold tracking-tight text-white text-base sm:text-lg block leading-none">Mouad <span class="text-purple-400">MOUJTAHID</span></span>
                     <span class="font-mono text-[11px] text-slate-400 block mt-1">BUT Info &bull; DU IA</span>
                 </div>
             </a>
@@ -146,31 +149,31 @@
 
             <!-- Boutons d'action -->
             <div class="hidden md:flex items-center gap-3">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" target="_blank" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium text-slate-200 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-file-arrow-down text-blue-400"></i>
+                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium text-slate-200 bg-dark-800/90 hover:bg-dark-700 border border-purple-500/25 transition-all flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-file-arrow-down text-pink-400"></i>
                     <span>Télécharger mon CV</span>
                 </a>
-                <a href="#contact" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-600/25 transition-all flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <a href="#contact" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 shadow-lg shadow-purple-600/25 transition-all flex items-center gap-2 whitespace-nowrap">
+                    <span class="w-2 h-2 rounded-full bg-pink-300"></span>
                     <span>Stage Janv. 2027</span>
                 </a>
             </div>
 
             <!-- Bouton Menu Mobile -->
-            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu" class="md:hidden p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-200 hover:text-white">
+            <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu" class="md:hidden p-2.5 rounded-xl bg-dark-800 border border-purple-500/30 text-slate-200 hover:text-white">
                 <i class="fa-solid fa-bars text-lg" id="mobile-menu-icon"></i>
             </button>
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-dark-900/95 backdrop-blur-xl border-b border-slate-800 px-4 pt-3 pb-6 space-y-2">
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900/95 backdrop-blur-xl border-b border-purple-500/20 px-4 pt-3 pb-6 space-y-2">
             <a href="#apropos" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">À propos</a>
             <a href="#competences" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Compétences</a>
             <a href="#projets" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Projets</a>
             <a href="#parcours" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Parcours</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Contact</a>
-            <div class="pt-3 border-t border-slate-800">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" target="_blank" class="w-full py-2.5 px-4 rounded-xl bg-blue-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
+            <div class="pt-3 border-t border-purple-500/20">
+                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
                     <i class="fa-solid fa-download"></i> Télécharger mon CV (PDF)
                 </a>
             </div>
@@ -180,16 +183,16 @@
     <!-- ==================== HERO SECTION ==================== -->
     <main class="relative z-10 pt-28 pb-16 sm:pt-36 sm:pb-24">
         <section id="accueil" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
                 
-                <!-- Colonne Gauche : Présentation & Informations alignées -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <!-- Colonne Gauche : Présentation & Informations parfaitement alignées -->
+                <div class="lg:col-span-8 space-y-6 text-center lg:text-left min-w-0">
                     
                     <!-- Badge Recherche de stage -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-mono font-medium">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-200 text-xs sm:text-sm font-mono font-medium">
                         <span class="relative flex h-2.5 w-2.5 shrink-0">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pink-500"></span>
                         </span>
                         <span>RECHERCHE DE STAGE &bull; À PARTIR DU 18 JANVIER 2027</span>
                     </div>
@@ -200,98 +203,98 @@
                             Mouad <span class="text-gradient">MOUJTAHID</span>
                         </h1>
                         <h2 class="text-xl sm:text-2xl lg:text-[26px] font-bold text-slate-200 leading-snug pt-1">
-                            Étudiant en <span class="text-white">BUT Informatique</span> &amp; <span class="text-cyan-400">DU IA</span>
+                            Étudiant en <span class="text-white">BUT Informatique</span> &amp; <span class="text-pink-400">DU IA</span>
                         </h2>
                     </div>
 
                     <!-- Texte de présentation naturel et professionnel -->
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Étudiant en deuxième année de <strong class="text-white font-semibold">BUT Informatique</strong> et en <strong class="text-white font-semibold">Diplôme Universitaire Intelligence Artificielle</strong> à l'IUT de Bordeaux, je recherche un <strong class="text-cyan-300 font-semibold">stage en développement informatique de 10 semaines à partir du 18 janvier 2027</strong>. Mes projets académiques m'ont permis de pratiquer le développement logiciel, le web, les bases de données et l'analyse de données.
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
+                        Étudiant en deuxième année de <strong class="text-white font-semibold">BUT Informatique</strong> et en <strong class="text-white font-semibold">Diplôme Universitaire Intelligence Artificielle</strong> à l'IUT de Bordeaux, je recherche un <strong class="text-pink-300 font-semibold">stage en développement informatique de 10 semaines à partir du 18 janvier 2027</strong>. Mes projets académiques m'ont permis de pratiquer le développement logiciel, le web, les bases de données et l'analyse de données.
                     </p>
 
                     <!-- Domaines ciblés : alignement strict sur UNE SEULE LIGNE sur desktop -->
                     <div class="pt-1">
-                        <div class="flex flex-wrap xl:flex-nowrap items-center justify-center lg:justify-start gap-2">
-                            <span class="text-xs font-mono text-slate-400 mr-1 shrink-0">Domaines ciblés :</span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700/90 text-xs font-mono text-blue-300 inline-flex items-center gap-2 shrink-0">
-                                <i class="fa-solid fa-code text-blue-400"></i>Développement Logiciel
+                        <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-2">
+                            <span class="text-xs font-mono text-slate-400 shrink-0 mr-0.5">Domaines ciblés :</span>
+                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-purple-500/30 text-xs font-mono text-purple-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
+                                <i class="fa-solid fa-code text-purple-400"></i>Développement Logiciel
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700/90 text-xs font-mono text-indigo-300 inline-flex items-center gap-2 shrink-0">
-                                <i class="fa-solid fa-globe text-indigo-400"></i>Développement Web
+                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-pink-500/30 text-xs font-mono text-pink-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
+                                <i class="fa-solid fa-globe text-pink-400"></i>Développement Web
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700/90 text-xs font-mono text-emerald-300 inline-flex items-center gap-2 shrink-0">
-                                <i class="fa-solid fa-database text-emerald-400"></i>Bases de Données
+                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-fuchsia-500/30 text-xs font-mono text-fuchsia-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
+                                <i class="fa-solid fa-database text-fuchsia-400"></i>Bases de Données
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700/90 text-xs font-mono text-cyan-300 inline-flex items-center gap-2 shrink-0">
-                                <i class="fa-solid fa-brain text-cyan-400"></i>Data &amp; IA
+                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-violet-500/30 text-xs font-mono text-violet-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
+                                <i class="fa-solid fa-brain text-violet-400"></i>Data &amp; IA
                             </span>
                         </div>
                     </div>
 
-                    <!-- Boutons d'action principaux -->
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
-                        <a href="#projets" class="px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-xl shadow-blue-600/25 flex items-center gap-2.5 transition-all">
+                    <!-- 3 Boutons d'action principaux alignés sur UNE SEULE LIGNE -->
+                    <div class="flex flex-wrap sm:flex-nowrap items-center justify-center lg:justify-start gap-3 pt-2">
+                        <a href="#projets" class="px-5 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 shadow-xl shadow-purple-600/25 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
                             <span>Découvrir mes réalisations</span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
 
-                        <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" target="_blank" class="px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-slate-100 bg-slate-800/90 hover:bg-slate-700 border border-slate-600/80 flex items-center gap-2.5 transition-all">
-                            <i class="fa-solid fa-file-arrow-down text-blue-400"></i>
+                        <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-100 bg-dark-800/95 hover:bg-dark-700 border border-purple-500/30 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
+                            <i class="fa-solid fa-file-arrow-down text-pink-400"></i>
                             <span>Télécharger mon CV (PDF)</span>
                         </a>
 
-                        <a href="#contact" class="px-5 py-3.5 rounded-xl font-medium text-sm sm:text-base text-slate-300 hover:text-white hover:bg-white/5 border border-slate-800 transition-all">
+                        <a href="#contact" class="px-5 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white hover:bg-white/5 border border-purple-500/20 inline-flex items-center justify-center transition-all whitespace-nowrap shrink-0">
                             Me contacter
                         </a>
                     </div>
 
-                    <!-- Grille 2x2 parfaitement alignée pour LinkedIn, Mail, Localisation, Âge & Permis B -->
-                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+                    <!-- Grille 2x2 parfaitement alignée pour LinkedIn, Mail complet, Localisation, Âge & Permis B -->
+                    <div class="pt-6 border-t border-purple-500/15 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
                         
                         <!-- 1. LinkedIn -->
-                        <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-900/75 border border-slate-800/90 hover:border-blue-500/40 transition-all group">
-                            <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-purple-400/50 transition-all group">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-300 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                                 <i class="fa-brands fa-linkedin-in text-base"></i>
                             </div>
-                            <div class="min-w-0">
+                            <div class="min-w-0 flex-1">
                                 <span class="text-[11px] font-mono text-slate-400 block leading-tight">LinkedIn</span>
-                                <span class="text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-blue-400 truncate block">linkedin.com/in/mouad-moujtahid</span>
+                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 group-hover:text-purple-300 block truncate">linkedin.com/in/mouad-moujtahid</span>
                             </div>
                         </a>
 
-                        <!-- 2. Email Universitaire -->
-                        <button type="button" onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="flex items-center justify-between gap-2 p-3 rounded-2xl bg-slate-900/75 border border-slate-800/90 hover:border-cyan-500/40 transition-all group text-left">
-                            <div class="flex items-center gap-3.5 min-w-0">
-                                <div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                        <!-- 2. Email Universitaire (affiché en entier sans coupure) -->
+                        <button type="button" onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="flex items-center justify-between gap-2 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-pink-400/50 transition-all group text-left">
+                            <div class="flex items-center gap-3 min-w-0 flex-1">
+                                <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0 group-hover:bg-pink-600 group-hover:text-white transition-colors">
                                     <i class="fa-regular fa-envelope text-base"></i>
                                 </div>
-                                <div class="min-w-0">
+                                <div class="min-w-0 flex-1">
                                     <span class="text-[11px] font-mono text-slate-400 block leading-tight">Adresse e-mail</span>
-                                    <span class="text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-cyan-300 truncate block">mouad.moujtahid@etu.u-bordeaux.fr</span>
+                                    <span class="text-xs sm:text-[13px] font-semibold text-slate-200 group-hover:text-pink-300 block whitespace-nowrap">mouad.moujtahid@etu.u-bordeaux.fr</span>
                                 </div>
                             </div>
-                            <i class="fa-regular fa-copy text-xs text-slate-400 group-hover:text-cyan-300 shrink-0 mr-1" title="Copier"></i>
+                            <i class="fa-regular fa-copy text-xs text-slate-400 group-hover:text-pink-300 shrink-0" title="Copier"></i>
                         </button>
 
                         <!-- 3. Localisation -->
-                        <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-900/75 border border-slate-800/90">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20">
+                            <div class="w-10 h-10 rounded-xl bg-fuchsia-500/15 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-300 shrink-0">
                                 <i class="fa-solid fa-location-dot text-base"></i>
                             </div>
-                            <div class="min-w-0">
+                            <div class="min-w-0 flex-1">
                                 <span class="text-[11px] font-mono text-slate-400 block leading-tight">Localisation</span>
-                                <span class="text-xs sm:text-sm font-semibold text-slate-200 truncate block">Bordeaux (33) &bull; IUT de Bordeaux</span>
+                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 block">Bordeaux (33) &bull; IUT de Bordeaux</span>
                             </div>
                         </div>
 
                         <!-- 4. Âge & Permis B -->
-                        <div class="flex items-center gap-3.5 p-3 rounded-2xl bg-slate-900/75 border border-slate-800/90">
-                            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20">
+                            <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
                                 <i class="fa-solid fa-id-card text-base"></i>
                             </div>
-                            <div class="min-w-0">
+                            <div class="min-w-0 flex-1">
                                 <span class="text-[11px] font-mono text-slate-400 block leading-tight">Profil &amp; Mobilité</span>
-                                <span class="text-xs sm:text-sm font-semibold text-slate-200 truncate block">19 ans &bull; Permis B</span>
+                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 block">19 ans &bull; Permis B</span>
                             </div>
                         </div>
 
@@ -299,14 +302,14 @@
                 </div>
 
                 <!-- Colonne Droite : Carte Photo de profil soignée -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-sm">
-                        <!-- Halo lumineux autour de la carte -->
-                        <div class="absolute -inset-1.5 bg-gradient-to-tr from-blue-600/40 via-indigo-500/30 to-cyan-400/40 rounded-3xl blur-xl opacity-65"></div>
+                <div class="lg:col-span-4 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-[340px]">
+                        <!-- Halo lumineux Violet / Rose autour de la carte -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-tr from-violet-600/45 via-purple-500/35 to-pink-500/45 rounded-3xl blur-xl opacity-70"></div>
                         
-                        <div class="relative glass-card rounded-3xl p-5 border border-white/10 shadow-2xl">
+                        <div class="relative glass-card rounded-3xl p-5 border border-purple-500/20 shadow-2xl">
                             <!-- Cadre Photo recadré sur le visage -->
-                            <div class="relative w-full aspect-[4/4.6] rounded-2xl overflow-hidden bg-slate-200 border border-slate-700/70 shadow-inner">
+                            <div class="relative w-full aspect-[4/4.6] rounded-2xl overflow-hidden bg-slate-200 border border-purple-500/30 shadow-inner">
                                 <img 
                                     src="PP.png" 
                                     alt="Mouad MOUJTAHID" 
@@ -345,12 +348,12 @@
                             </div>
 
                             <!-- Bandeau d'information sous la photo -->
-                            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
+                            <div class="mt-4 pt-3 border-t border-purple-500/20 flex items-center justify-between text-xs font-mono">
                                 <span class="text-slate-300 flex items-center gap-2">
-                                    <i class="fa-solid fa-graduation-cap text-blue-400"></i>
+                                    <i class="fa-solid fa-graduation-cap text-purple-400"></i>
                                     IUT de Bordeaux
                                 </span>
-                                <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-semibold">
+                                <span class="px-2.5 py-1 rounded-lg bg-pink-500/15 border border-pink-500/30 text-pink-300 font-semibold">
                                     Stage : 18/01/2027
                                 </span>
                             </div>
@@ -364,7 +367,7 @@
         <!-- ==================== SECTION À PROPOS ==================== -->
         <section id="apropos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 reveal">
             <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-purple-500/10 text-purple-300 border border-purple-500/25">
                     Qui suis-je ?
                 </span>
                 <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -382,10 +385,10 @@
                 <div class="glass-card rounded-3xl p-7 flex flex-col justify-between h-full">
                     <div>
                         <div class="flex items-center justify-between mb-5">
-                            <div class="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl">
+                            <div class="w-12 h-12 rounded-2xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 text-xl">
                                 <i class="fa-solid fa-laptop-code"></i>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 font-mono text-xs">
+                            <span class="px-3 py-1 rounded-full bg-violet-500/10 border border-violet-500/25 text-violet-300 font-mono text-xs">
                                 IUT de Bordeaux
                             </span>
                         </div>
@@ -394,9 +397,9 @@
                             Mon cursus en BUT Informatique m'apporte des bases solides en programmation orientée objet, développement web, bases de données et systèmes Linux. En parallèle, mon DU en Intelligence Artificielle me forme à la Data Science, au Machine Learning, à l'analyse d'images et à l'optimisation.
                         </p>
                     </div>
-                    <div class="pt-5 mt-6 border-t border-slate-800/80 flex flex-wrap gap-2">
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-slate-300">Développement Logiciel</span>
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-cyan-300">Data Science &amp; IA</span>
+                    <div class="pt-5 mt-6 border-t border-purple-500/15 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-slate-300">Développement Logiciel</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-pink-300">Data Science &amp; IA</span>
                     </div>
                 </div>
 
@@ -404,10 +407,10 @@
                 <div class="glass-card rounded-3xl p-7 flex flex-col justify-between h-full">
                     <div>
                         <div class="flex items-center justify-between mb-5">
-                            <div class="w-12 h-12 rounded-2xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl">
+                            <div class="w-12 h-12 rounded-2xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 text-xl">
                                 <i class="fa-solid fa-tags"></i>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 font-mono text-xs">
+                            <span class="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/25 text-pink-300 font-mono text-xs">
                                 2024 - 2026 &bull; Indépendant
                             </span>
                         </div>
@@ -416,9 +419,9 @@
                             Entre 2024 et 2026, j'ai développé une activité d'achat-revente de sneakers en indépendant : veille régulière des sorties, suivi des tendances du marché, gestion des achats et revente. Cette expérience m'a permis de développer mon sens de l'organisation, mon autonomie et la relation client.
                         </p>
                     </div>
-                    <div class="pt-5 mt-6 border-t border-slate-800/80 flex flex-wrap gap-2">
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-slate-300">Veille des sorties</span>
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-indigo-300">Relation client</span>
+                    <div class="pt-5 mt-6 border-t border-purple-500/15 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-slate-300">Veille des sorties</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-pink-300">Relation client</span>
                     </div>
                 </div>
 
@@ -426,10 +429,10 @@
                 <div class="glass-card rounded-3xl p-7 flex flex-col justify-between h-full">
                     <div>
                         <div class="flex items-center justify-between mb-5">
-                            <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl">
+                            <div class="w-12 h-12 rounded-2xl bg-fuchsia-500/15 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-300 text-xl">
                                 <i class="fa-regular fa-futbol"></i>
                             </div>
-                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 font-mono text-xs">
+                            <span class="px-3 py-1 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/25 text-fuchsia-300 font-mono text-xs">
                                 10 ans en club
                             </span>
                         </div>
@@ -438,9 +441,9 @@
                             J'ai pratiqué le football pendant 10 ans en club au poste d'ailier. Ce sport collectif m'a appris à communiquer efficacement avec mes coéquipiers, à faire preuve de régularité aux entraînements et à m'impliquer pleinement pour atteindre un objectif commun.
                         </p>
                     </div>
-                    <div class="pt-5 mt-6 border-t border-slate-800/80 flex flex-wrap gap-2">
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-slate-300">Poste d'ailier</span>
-                        <span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-xs font-mono text-emerald-300">Esprit d'équipe</span>
+                    <div class="pt-5 mt-6 border-t border-purple-500/15 flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-slate-300">Poste d'ailier</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-dark-800 text-xs font-mono text-fuchsia-300">Esprit d'équipe</span>
                     </div>
                 </div>
 
@@ -452,7 +455,7 @@
             <!-- En-tête avec filtres alignés sur UNE SEULE LIGNE -->
             <div class="flex flex-col xl:flex-row xl:items-end justify-between mb-12 gap-6">
                 <div>
-                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-pink-500/10 text-pink-300 border border-pink-500/25">
                         Hard &amp; Soft Skills
                     </span>
                     <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -462,22 +465,22 @@
 
                 <!-- Filtres alignés sur une seule ligne horizontale -->
                 <div class="flex flex-wrap sm:flex-nowrap items-center gap-2 shrink-0" id="skill-filters">
-                    <button onclick="filterSkills('all')" data-skill-btn="all" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-blue-600 text-white shadow-lg shadow-blue-600/25 transition-all whitespace-nowrap">
+                    <button onclick="filterSkills('all')" data-skill-btn="all" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-violet-600 to-pink-600 text-white shadow-lg shadow-purple-600/25 transition-all whitespace-nowrap">
                         Tout afficher
                     </button>
-                    <button onclick="filterSkills('dev-web')" data-skill-btn="dev-web" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterSkills('dev-web')" data-skill-btn="dev-web" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Langages, Web &amp; BDD
                     </button>
-                    <button onclick="filterSkills('data-ia')" data-skill-btn="data-ia" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterSkills('data-ia')" data-skill-btn="data-ia" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Data &amp; IA
                     </button>
-                    <button onclick="filterSkills('sys-soft')" data-skill-btn="sys-soft" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterSkills('sys-soft')" data-skill-btn="sys-soft" class="skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Systèmes &amp; Soft Skills
                     </button>
                 </div>
             </div>
 
-            <!-- Grille des 6 cartes riches (style apprécié par l'utilisateur) -->
+            <!-- Grille des 6 cartes riches -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch" id="skills-grid">
                 
                 <!-- 1. Langages & Conception -->
@@ -485,12 +488,12 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-blue-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
                                     <i class="fa-solid fa-laptop-code text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Langages &amp; Conception</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-blue-500/10 border border-blue-500/20 text-[11px] font-mono text-blue-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/25 text-[11px] font-mono text-violet-300 shrink-0">
                                 POO &bull; Modélisation
                             </span>
                         </div>
@@ -498,19 +501,19 @@
                             Développement orienté objet, modélisation de bases de données et conception d'applications.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-java text-amber-400"></i>Java (POO)
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-java text-pink-400"></i>Java (POO)
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-python text-yellow-400"></i>Python
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-python text-purple-300"></i>Python
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-solid fa-window-maximize text-purple-400"></i>C# (Windows Forms)
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-solid fa-window-maximize text-fuchsia-400"></i>C# (Windows Forms)
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 UML
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Modélisation MCD
                             </span>
                         </div>
@@ -522,12 +525,12 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0">
                                     <i class="fa-solid fa-brain text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Intelligence Artificielle</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-[11px] font-mono text-cyan-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-pink-500/10 border border-pink-500/25 text-[11px] font-mono text-pink-300 shrink-0">
                                 DU IA
                             </span>
                         </div>
@@ -535,19 +538,19 @@
                             Enseignements suivis dans le cadre du DU IA : apprentissage automatique, réseaux de neurones et traitement d'images.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-solid fa-fire-flame-curved text-orange-400"></i>PyTorch
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-solid fa-fire-flame-curved text-pink-400"></i>PyTorch
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Machine Learning
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 MLP
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Analyse d'images
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Optimisation
                             </span>
                         </div>
@@ -559,12 +562,12 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-fuchsia-500/15 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-300 shrink-0">
                                     <i class="fa-solid fa-chart-pie text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Data Science &amp; Analyse</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-[11px] font-mono text-indigo-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-fuchsia-500/10 border border-fuchsia-500/25 text-[11px] font-mono text-fuchsia-300 shrink-0">
                                 Data
                             </span>
                         </div>
@@ -572,22 +575,22 @@
                             Nettoyage et import de fichiers CSV, manipulation de données en Python et représentation graphique.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Data Science
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Pandas
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 NumPy
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Matplotlib
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Nettoyage et import de CSV
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Visualisation de données
                             </span>
                         </div>
@@ -599,12 +602,12 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-300 shrink-0">
                                     <i class="fa-solid fa-database text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Web &amp; Bases de Données</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-mono text-emerald-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-purple-500/10 border border-purple-500/25 text-[11px] font-mono text-purple-300 shrink-0">
                                 Web &amp; SQL
                             </span>
                         </div>
@@ -612,22 +615,22 @@
                             Intégration de pages web responsives et conception de bases de données relationnelles.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-html5 text-orange-400"></i>HTML
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-html5 text-pink-400"></i>HTML
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-css3-alt text-blue-400"></i>CSS
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-css3-alt text-violet-400"></i>CSS
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-js text-yellow-300"></i>JavaScript
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-js text-fuchsia-300"></i>JavaScript
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-emerald-300">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-pink-300">
                                 SQL
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-emerald-300">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-pink-300">
                                 SQL Server
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 SQLAlchemy
                             </span>
                         </div>
@@ -639,12 +642,12 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
                                     <i class="fa-solid fa-terminal text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Systèmes &amp; Outils</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-amber-500/10 border border-amber-500/20 text-[11px] font-mono text-amber-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/25 text-[11px] font-mono text-violet-300 shrink-0">
                                 Environnements
                             </span>
                         </div>
@@ -652,25 +655,25 @@
                             Administration sous Linux, virtualisation de machines et gestion de versions avec Git.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-linux text-slate-200"></i>Linux
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-linux text-purple-300"></i>Linux
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Virtualisation
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white">
                                 Bash
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-white inline-flex items-center gap-2">
-                                <i class="fa-brands fa-git-alt text-orange-500"></i>Git
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-white inline-flex items-center gap-2">
+                                <i class="fa-brands fa-git-alt text-pink-400"></i>Git
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 VSCode
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 Visual Studio
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs font-mono text-slate-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-dark-800/90 border border-purple-500/25 text-xs font-mono text-slate-200">
                                 NetBeans
                             </span>
                         </div>
@@ -682,39 +685,39 @@
                     <div>
                         <div class="flex items-start justify-between gap-3 mb-4">
                             <div class="flex items-center gap-3.5">
-                                <div class="w-11 h-11 rounded-2xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                                <div class="w-11 h-11 rounded-2xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0">
                                     <i class="fa-solid fa-handshake text-lg"></i>
                                 </div>
                                 <h3 class="font-bold text-lg text-white leading-snug">Savoir-être &amp; Langues</h3>
                             </div>
-                            <span class="px-2.5 py-1 rounded-lg bg-purple-500/10 border border-purple-500/20 text-[11px] font-mono text-purple-300 shrink-0">
+                            <span class="px-2.5 py-1 rounded-lg bg-pink-500/10 border border-pink-500/25 text-[11px] font-mono text-pink-300 shrink-0">
                                 Soft Skills
                             </span>
                         </div>
 
                         <div class="flex flex-wrap gap-2 mb-5">
-                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/25 text-xs font-mono text-purple-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-xs font-mono text-purple-200">
                                 Travail en équipe
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/25 text-xs font-mono text-purple-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-xs font-mono text-purple-200">
                                 Autonomie
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/25 text-xs font-mono text-purple-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-xs font-mono text-purple-200">
                                 Rigueur
                             </span>
-                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/25 text-xs font-mono text-purple-200">
+                            <span class="px-3 py-1.5 rounded-xl bg-purple-500/15 border border-purple-500/30 text-xs font-mono text-purple-200">
                                 Relation client
                             </span>
                         </div>
 
-                        <div class="pt-4 border-t border-slate-800/90 space-y-2 text-xs font-mono">
+                        <div class="pt-4 border-t border-purple-500/20 space-y-2 text-xs font-mono">
                             <div class="flex items-center justify-between">
                                 <span class="text-slate-300">Français</span>
-                                <span class="text-emerald-400">Langue maternelle</span>
+                                <span class="text-pink-300">Langue maternelle</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <span class="text-slate-300">Anglais</span>
-                                <span class="text-blue-400">Niveau B2 (lu, écrit, parlé)</span>
+                                <span class="text-purple-300">Niveau B2 (lu, écrit, parlé)</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <span class="text-slate-300">Espagnol</span>
@@ -732,7 +735,7 @@
             <!-- En-tête parfaitement aligné avec les 4 boutons sur UNE SEULE LIGNE -->
             <div class="flex flex-col xl:flex-row xl:items-end justify-between mb-12 gap-6">
                 <div>
-                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                    <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-purple-500/10 text-purple-300 border border-purple-500/25">
                         Réalisations
                     </span>
                     <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -745,16 +748,16 @@
 
                 <!-- Barre de filtres sur une seule ligne horizontale -->
                 <div class="flex flex-wrap sm:flex-nowrap items-center gap-2 shrink-0" id="project-filters">
-                    <button onclick="filterProjects('all')" data-proj-btn="all" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-blue-600 text-white shadow-lg shadow-blue-600/25 transition-all whitespace-nowrap">
+                    <button onclick="filterProjects('all')" data-proj-btn="all" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-violet-600 to-pink-600 text-white shadow-lg shadow-purple-600/25 transition-all whitespace-nowrap">
                         Tous
                     </button>
-                    <button onclick="filterProjects('logiciel')" data-proj-btn="logiciel" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterProjects('logiciel')" data-proj-btn="logiciel" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Logiciel &amp; Algorithmie
                     </button>
-                    <button onclick="filterProjects('data')" data-proj-btn="data" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterProjects('data')" data-proj-btn="data" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Data &amp; Base de données
                     </button>
-                    <button onclick="filterProjects('web-reseau')" data-proj-btn="web-reseau" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap">
+                    <button onclick="filterProjects('web-reseau')" data-proj-btn="web-reseau" class="proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap">
                         Web &amp; Réseau
                     </button>
                 </div>
@@ -767,7 +770,7 @@
         <!-- ==================== SECTION PARCOURS (FORMATION & EXPÉRIENCES) ==================== -->
         <section id="parcours" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 reveal">
             <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                <span class="px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider bg-pink-500/10 text-pink-300 border border-pink-500/25">
                     Parcours
                 </span>
                 <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -780,24 +783,24 @@
                 <!-- Colonne 1 : Formation -->
                 <div class="space-y-6">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                        <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white">Formation</h3>
                     </div>
 
-                    <div class="relative pl-6 border-l-2 border-slate-800 space-y-6">
+                    <div class="relative pl-6 border-l-2 border-purple-500/25 space-y-6">
                         
                         <!-- BUT Informatique -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-violet-500 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-blue-500/15 text-blue-300 font-mono text-xs font-semibold">2025 - 2028</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-violet-500/15 text-violet-300 font-mono text-xs font-semibold">2025 - 2028</span>
                                     <span class="text-xs font-mono text-slate-400">Gradignan (33)</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">BUT Informatique</h4>
-                                <p class="text-sm text-indigo-300 font-medium mb-1">IUT de Bordeaux</p>
+                                <p class="text-sm text-purple-300 font-medium mb-1">IUT de Bordeaux</p>
                                 <p class="text-xs sm:text-sm text-slate-300">
                                     Développement logiciel, développement web, conception de bases de données, algorithmique et administration systèmes et réseaux.
                                 </p>
@@ -806,14 +809,14 @@
 
                         <!-- DU Intelligence Artificielle -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-pink-500 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-cyan-500/15 text-cyan-300 font-mono text-xs font-semibold">2025 - 2027</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-pink-500/15 text-pink-300 font-mono text-xs font-semibold">2025 - 2027</span>
                                     <span class="text-xs font-mono text-slate-400">Gradignan (33)</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">DU Intelligence Artificielle (DU IA)</h4>
-                                <p class="text-sm text-cyan-300 font-medium mb-1">IUT de Bordeaux</p>
+                                <p class="text-sm text-pink-300 font-medium mb-1">IUT de Bordeaux</p>
                                 <p class="text-xs sm:text-sm text-slate-300">
                                     Enseignements en Data Science, Analyse d'images, Machine Learning (MLP, PyTorch) et Optimisation.
                                 </p>
@@ -822,10 +825,10 @@
 
                         <!-- Baccalauréat général -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-fuchsia-400 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 font-mono text-xs font-semibold">2025 &bull; Mention Bien</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-fuchsia-500/15 text-fuchsia-300 font-mono text-xs font-semibold">2025 &bull; Mention Bien</span>
                                     <span class="text-xs font-mono text-slate-400">Sainte-Foy-la-Grande (33)</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">Baccalauréat général Mention Bien</h4>
@@ -842,20 +845,20 @@
                 <!-- Colonne 2 : Expériences -->
                 <div class="space-y-6">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 rounded-xl bg-indigo-500/15 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                        <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300">
                             <i class="fa-solid fa-briefcase"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white">Expériences</h3>
                     </div>
 
-                    <div class="relative pl-6 border-l-2 border-slate-800 space-y-6">
+                    <div class="relative pl-6 border-l-2 border-purple-500/25 space-y-6">
                         
                         <!-- Sneakers -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-pink-500 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 text-indigo-300 font-mono text-xs font-semibold">2024 - 2026</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-pink-500/15 text-pink-300 font-mono text-xs font-semibold">2024 - 2026</span>
                                     <span class="text-xs font-mono text-slate-400">Indépendant</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">Achat-revente de sneakers en indépendant</h4>
@@ -867,10 +870,10 @@
 
                         <!-- Action -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-400 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-violet-500 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-blue-500/15 text-blue-300 font-mono text-xs font-semibold">Été 2026</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-violet-500/15 text-violet-300 font-mono text-xs font-semibold">Été 2026</span>
                                     <span class="text-xs font-mono text-slate-400">Action</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">Employé de libre-service chez Action</h4>
@@ -882,10 +885,10 @@
 
                         <!-- Intérim -->
                         <div class="relative">
-                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></span>
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-fuchsia-400 ring-4 ring-dark-950"></span>
                             <div class="glass-card rounded-2xl p-6">
                                 <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 font-mono text-xs font-semibold">Été 2026</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-dark-800 text-purple-200 font-mono text-xs font-semibold">Été 2026</span>
                                     <span class="text-xs font-mono text-slate-400">Intérim</span>
                                 </div>
                                 <h4 class="text-lg font-bold text-white">Missions d'intérim</h4>
@@ -903,13 +906,13 @@
 
         <!-- ==================== SECTION CONTACT ==================== -->
         <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-12 reveal">
-            <div class="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-blue-500/25">
+            <div class="glass-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-purple-500/30">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
                     
                     <!-- Colonne Gauche : Coordonnées -->
                     <div class="lg:col-span-6 space-y-6">
-                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs font-mono">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-200 text-xs font-mono">
+                            <span class="w-2 h-2 rounded-full bg-pink-400"></span>
                             DISPONIBLE DÈS LE 18 JANVIER 2027
                         </span>
                         <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
@@ -923,51 +926,51 @@
                         <div class="space-y-3.5 pt-1">
                             
                             <!-- E-mail universitaire -->
-                            <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-3 hover:border-blue-500/40 transition-all">
+                            <div class="p-4 rounded-2xl bg-dark-900/90 border border-purple-500/20 flex items-center justify-between gap-3 hover:border-pink-500/40 transition-all">
                                 <div class="flex items-center gap-3.5 min-w-0">
-                                    <div class="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center shrink-0">
+                                    <div class="w-10 h-10 rounded-xl bg-pink-500/15 text-pink-300 flex items-center justify-center shrink-0">
                                         <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="min-w-0">
                                         <span class="text-xs font-mono text-slate-400 block">E-mail universitaire</span>
-                                        <a href="mailto:mouad.moujtahid@etu.u-bordeaux.fr" class="text-sm sm:text-base font-semibold text-white hover:text-blue-400 truncate block">
+                                        <a href="mailto:mouad.moujtahid@etu.u-bordeaux.fr" class="text-xs sm:text-base font-semibold text-white hover:text-pink-300 break-all block">
                                             mouad.moujtahid@etu.u-bordeaux.fr
                                         </a>
                                     </div>
                                 </div>
-                                <button onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white text-xs font-mono transition-colors shrink-0">
+                                <button onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="px-3 py-2 rounded-xl bg-dark-800 hover:bg-pink-600 text-slate-200 hover:text-white text-xs font-mono transition-colors shrink-0 border border-purple-500/20">
                                     <i class="fa-regular fa-copy mr-1"></i>Copier
                                 </button>
                             </div>
 
                             <!-- Téléphone & LinkedIn -->
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                                <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-2">
+                                <div class="p-4 rounded-2xl bg-dark-900/90 border border-purple-500/20 flex items-center justify-between gap-2">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+                                        <div class="w-10 h-10 rounded-xl bg-violet-500/15 text-violet-300 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-phone"></i>
                                         </div>
                                         <div>
                                             <span class="text-xs font-mono text-slate-400 block">Téléphone</span>
-                                            <a href="tel:+33752143527" class="text-sm font-semibold text-white hover:text-emerald-400">07 52 14 35 27</a>
+                                            <a href="tel:+33752143527" class="text-sm font-semibold text-white hover:text-violet-300">07 52 14 35 27</a>
                                         </div>
                                     </div>
-                                    <button onclick="copyText('07 52 14 35 27', 'Numéro copié !')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">
+                                    <button onclick="copyText('07 52 14 35 27', 'Numéro copié !')" class="p-2 rounded-lg bg-dark-800 hover:bg-dark-700 text-slate-300 text-xs border border-purple-500/20">
                                         <i class="fa-regular fa-copy"></i>
                                     </button>
                                 </div>
 
-                                <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-blue-500/50 flex items-center justify-between gap-2 group transition-all">
+                                <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-dark-900/90 border border-purple-500/20 hover:border-purple-400/50 flex items-center justify-between gap-2 group transition-all">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0">
+                                        <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-300 flex items-center justify-center shrink-0">
                                             <i class="fa-brands fa-linkedin-in"></i>
                                         </div>
                                         <div>
                                             <span class="text-xs font-mono text-slate-400 block">LinkedIn</span>
-                                            <span class="text-sm font-semibold text-white group-hover:text-blue-400">/in/mouad-moujtahid</span>
+                                            <span class="text-sm font-semibold text-white group-hover:text-purple-300">/in/mouad-moujtahid</span>
                                         </div>
                                     </div>
-                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-blue-400"></i>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-purple-300"></i>
                                 </a>
                             </div>
 
@@ -975,33 +978,33 @@
                     </div>
 
                     <!-- Colonne Droite : Formulaire d'envoi d'e-mail (2 champs) -->
-                    <div class="lg:col-span-6 bg-slate-900/80 rounded-2xl p-6 sm:p-8 border border-slate-800">
+                    <div class="lg:col-span-6 bg-dark-900/90 rounded-2xl p-6 sm:p-8 border border-purple-500/25">
                         <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2.5">
-                            <i class="fa-regular fa-comment-dots text-blue-400"></i>
+                            <i class="fa-regular fa-comment-dots text-pink-400"></i>
                             <span>M'envoyer un message rapide</span>
                         </h3>
                         <p class="text-xs text-slate-400 mb-5 leading-relaxed">
-                            Remplissez ces deux champs pour ouvrir votre messagerie avec un e-mail pré-rempli adressé à <code class="text-blue-300">mouad.moujtahid@etu.u-bordeaux.fr</code>.
+                            Remplissez ces deux champs pour ouvrir votre messagerie avec un e-mail pré-rempli adressé à <code class="text-pink-300">mouad.moujtahid@etu.u-bordeaux.fr</code>.
                         </p>
 
                         <form onsubmit="handleQuickMail(event)" class="space-y-4">
                             <div>
                                 <label for="contact-name" class="block text-xs font-mono text-slate-300 mb-1.5">Votre Nom / Entreprise *</label>
-                                <input type="text" id="contact-name" required placeholder="Ex: Marie Dupont - Capgemini" class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500">
+                                <input type="text" id="contact-name" required placeholder="Ex: Marie Dupont - Capgemini" class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-purple-500/30 text-sm text-white focus:outline-none focus:border-pink-500">
                             </div>
 
                             <div>
                                 <label for="contact-message" class="block text-xs font-mono text-slate-300 mb-1.5">Votre Message *</label>
-                                <textarea id="contact-message" rows="4" required placeholder="Bonjour Mouad, nous souhaiterions échanger avec vous au sujet d'un stage..." class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500"></textarea>
+                                <textarea id="contact-message" rows="4" required placeholder="Bonjour Mouad, nous souhaiterions échanger avec vous au sujet d'un stage..." class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-purple-500/30 text-sm text-white focus:outline-none focus:border-pink-500"></textarea>
                             </div>
 
                             <div class="flex flex-wrap items-center gap-3 pt-1">
-                                <button type="submit" class="flex-1 py-3 px-5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 flex items-center justify-center gap-2 transition-all">
+                                <button type="submit" class="flex-1 py-3 px-5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/25 flex items-center justify-center gap-2 transition-all">
                                     <i class="fa-solid fa-paper-plane"></i>
                                     <span>Envoyer par Email</span>
                                 </button>
-                                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" target="_blank" class="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium border border-slate-700 flex items-center gap-2">
-                                    <i class="fa-solid fa-file-pdf text-rose-400"></i>
+                                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="py-3 px-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 text-sm font-medium border border-purple-500/25 flex items-center gap-2">
+                                    <i class="fa-solid fa-file-pdf text-pink-400"></i>
                                     <span>Mon CV</span>
                                 </a>
                             </div>
@@ -1014,15 +1017,15 @@
     </main>
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class="border-t border-slate-800/80 bg-dark-950/90 py-10 relative z-10">
+    <footer class="border-t border-purple-500/20 bg-dark-950/90 py-10 relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
             <div class="flex items-center gap-3">
-                <span class="w-7 h-7 rounded-lg bg-blue-600 text-white font-mono font-bold flex items-center justify-center text-xs">MM</span>
+                <span class="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-600 to-pink-600 text-white font-mono font-bold flex items-center justify-center text-xs">MM</span>
                 <span>&copy; 2026 <strong>Mouad MOUJTAHID</strong> &bull; BUT Informatique &amp; DU IA (IUT de Bordeaux)</span>
             </div>
             <div class="flex items-center gap-5">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" target="_blank" class="hover:text-white transition-colors">Télécharger mon CV</a>
-                <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors">LinkedIn</a>
+                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="hover:text-white transition-colors">Télécharger mon CV</a>
+                <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors">LinkedIn</a>
                 <a href="#accueil" class="hover:text-white transition-colors"><i class="fa-solid fa-arrow-up mr-1"></i>Haut de page</a>
             </div>
         </div>
@@ -1030,10 +1033,10 @@
 
     <!-- ==================== MODALE DÉTAIL PROJET ==================== -->
     <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-md overflow-y-auto" onclick="if(event.target === this) closeProjectModal()">
-        <div class="relative w-full max-w-5xl bg-dark-900 border border-slate-700/80 rounded-3xl shadow-2xl overflow-hidden my-auto max-h-[92vh] flex flex-col">
+        <div class="relative w-full max-w-5xl bg-dark-900 border border-purple-500/35 rounded-3xl shadow-2xl overflow-hidden my-auto max-h-[92vh] flex flex-col">
             
             <!-- Barre supérieure de la modale -->
-            <div class="px-5 py-4 bg-slate-900/95 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 shrink-0">
+            <div class="px-5 py-4 bg-dark-950/95 border-b border-purple-500/20 flex flex-wrap items-center justify-between gap-3 shrink-0">
                 <div class="flex items-center gap-3">
                     <div class="flex items-center gap-1.5 shrink-0">
                         <button onclick="closeProjectModal()" class="w-3.5 h-3.5 rounded-full bg-rose-500 hover:bg-rose-400 transition-colors" title="Fermer"></button>
@@ -1044,7 +1047,7 @@
                 </div>
                 <div class="flex items-center gap-2 ml-auto">
                     <div id="modal-tags" class="hidden sm:flex flex-wrap items-center gap-1.5"></div>
-                    <button onclick="closeProjectModal()" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center border border-slate-700">
+                    <button onclick="closeProjectModal()" class="w-9 h-9 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-300 hover:text-white flex items-center justify-center border border-purple-500/25">
                         <i class="fa-solid fa-xmark text-lg"></i>
                     </button>
                 </div>
@@ -1055,16 +1058,16 @@
                 
                 <!-- Colonne Gauche : Visuel et miniatures cliquables -->
                 <div class="lg:col-span-5 space-y-4">
-                    <div id="modal-visual-container" class="w-full rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-950 shadow-inner min-h-[240px] flex items-center justify-center relative">
+                    <div id="modal-visual-container" class="w-full rounded-2xl overflow-hidden border border-purple-500/30 bg-dark-950 shadow-inner min-h-[240px] flex items-center justify-center relative">
                     </div>
 
                     <!-- Miniatures visuelles si plusieurs images -->
                     <div id="modal-thumbs" class="flex items-center gap-3 overflow-x-auto pb-1"></div>
 
                     <!-- Informations sur le mode de réalisation avec icône -->
-                    <div class="p-4 rounded-2xl bg-slate-950/70 border border-slate-800/90 flex items-center justify-between text-xs font-mono text-slate-300">
+                    <div class="p-4 rounded-2xl bg-dark-950/80 border border-purple-500/20 flex items-center justify-between text-xs font-mono text-slate-300">
                         <span class="text-slate-400">Modalité :</span>
-                        <span id="modal-team" class="text-indigo-300 font-semibold inline-flex items-center gap-2"></span>
+                        <span id="modal-team" class="text-purple-300 font-semibold inline-flex items-center gap-2"></span>
                     </div>
                 </div>
 
@@ -1073,16 +1076,16 @@
                     <p id="modal-desc" class="text-slate-100 text-base sm:text-lg font-medium leading-snug"></p>
 
                     <!-- Cahier des charges -->
-                    <div class="p-4 sm:p-5 rounded-2xl bg-slate-800/40 border border-slate-700/60">
-                        <h4 class="text-xs font-mono uppercase tracking-wider text-blue-400 font-semibold mb-2">
+                    <div class="p-4 sm:p-5 rounded-2xl bg-dark-800/55 border border-purple-500/20">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-purple-300 font-semibold mb-2">
                             Cahier des charges
                         </h4>
                         <p id="modal-cdc" class="text-slate-300 text-sm leading-relaxed"></p>
                     </div>
 
                     <!-- Résultats (KPIs) -->
-                    <div class="p-4 sm:p-5 rounded-2xl bg-slate-800/40 border border-slate-700/60">
-                        <h4 class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold mb-2">
+                    <div class="p-4 sm:p-5 rounded-2xl bg-dark-800/55 border border-purple-500/20">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-pink-400 font-semibold mb-2">
                             Résultats (KPIs)
                         </h4>
                         <p id="modal-kpis" class="text-slate-300 text-sm leading-relaxed"></p>
@@ -1090,14 +1093,14 @@
 
                     <!-- Compétences & Outils -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-700/60">
-                            <h4 class="text-xs font-mono uppercase tracking-wider text-indigo-400 font-semibold mb-3">
+                        <div class="p-4 rounded-2xl bg-dark-800/55 border border-purple-500/20">
+                            <h4 class="text-xs font-mono uppercase tracking-wider text-violet-300 font-semibold mb-3">
                                 Compétences acquises
                             </h4>
                             <div id="modal-skills" class="flex flex-wrap gap-1.5"></div>
                         </div>
-                        <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-700/60">
-                            <h4 class="text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold mb-3">
+                        <div class="p-4 rounded-2xl bg-dark-800/55 border border-purple-500/20">
+                            <h4 class="text-xs font-mono uppercase tracking-wider text-fuchsia-300 font-semibold mb-3">
                                 Outils et méthodes
                             </h4>
                             <div id="modal-tools" class="flex flex-wrap gap-1.5"></div>
@@ -1106,7 +1109,7 @@
 
                     <!-- Bouton Fermer -->
                     <div class="pt-3 flex items-center justify-end">
-                        <button onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-medium border border-slate-700">
+                        <button onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 text-sm font-medium border border-purple-500/25">
                             Fermer
                         </button>
                     </div>
@@ -1117,8 +1120,8 @@
     </div>
 
     <!-- ==================== NOTIFICATION COPIE ==================== -->
-    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-slate-900 border border-blue-500/50 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
-        <div class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center">
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-dark-900 border border-pink-500/50 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center">
             <i class="fa-solid fa-check"></i>
         </div>
         <span id="toast-msg" class="text-xs sm:text-sm font-medium">Copié dans le presse-papiers !</span>
@@ -1158,18 +1161,18 @@
                 case 'odomo':
                     return `
                     <svg viewBox="0 0 600 360" class="w-full h-full bg-[#090D16]">
-                        <rect x="16" y="16" width="568" height="328" rx="12" fill="#0F172A" stroke="#1E3A8A" stroke-width="1.5"/>
-                        <text x="36" y="48" fill="#60A5FA" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700">19:06 11/11 [Mode météo]</text>
+                        <rect x="16" y="16" width="568" height="328" rx="12" fill="#0F172A" stroke="#7E22CE" stroke-width="1.5"/>
+                        <text x="36" y="48" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700">19:06 11/11 [Mode météo]</text>
                         <rect x="36" y="68" width="245" height="95" rx="8" fill="#1E293B"/>
                         <text x="52" y="92" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">INTÉRIEUR</text>
                         <text x="52" y="124" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="26" font-weight="700">19,9 °C</text>
-                        <text x="52" y="148" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="13">42% hygrométrie</text>
+                        <text x="52" y="148" fill="#F472B6" font-family="JetBrains Mono, monospace" font-size="13">42% hygrométrie</text>
                         <rect x="305" y="68" width="255" height="95" rx="8" fill="#1E293B"/>
                         <text x="321" y="92" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">EXTÉRIEUR</text>
                         <text x="321" y="124" fill="#FBBF24" font-family="JetBrains Mono, monospace" font-size="26" font-weight="700">8,5 °C</text>
                         <text x="321" y="148" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">24% hygro | 1069 hPa | 286 W/m²</text>
                         <text x="36" y="192" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="12">Pluviométrie des 24 dernières heures (mm) :</text>
-                        <g fill="#3B82F6">
+                        <g fill="#A855F7">
                             <rect x="48" y="260" width="14" height="35" rx="2"/><rect x="70" y="245" width="14" height="50" rx="2"/>
                             <rect x="92" y="220" width="14" height="75" rx="2"/><rect x="114" y="235" width="14" height="60" rx="2"/>
                             <rect x="136" y="270" width="14" height="25" rx="2"/><rect x="158" y="285" width="14" height="10" rx="2"/>
@@ -1214,8 +1217,8 @@
                         <text x="430" y="22" fill="#0F172A" font-family="JetBrains Mono, monospace" font-size="11">Time: 11.381 ms</text>
                         <rect x="18" y="28" width="110" height="18" rx="4" fill="#FFFFFF" stroke="#94A3B8"/>
                         <text x="36" y="40" fill="#1E293B" font-family="Plus Jakarta Sans, sans-serif" font-size="10">Welsh &amp; Powell</text>
-                        <rect x="138" y="28" width="110" height="18" rx="4" fill="#DBEAFE" stroke="#3B82F6"/>
-                        <text x="155" y="40" fill="#1E3A8A" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600">6-Colors Planar</text>
+                        <rect x="138" y="28" width="110" height="18" rx="4" fill="#F3E8FF" stroke="#9333EA"/>
+                        <text x="155" y="40" fill="#581C87" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600">6-Colors Planar</text>
                         <rect x="258" y="28" width="110" height="18" rx="4" fill="#FFFFFF" stroke="#94A3B8"/>
                         <text x="275" y="40" fill="#1E293B" font-family="Plus Jakarta Sans, sans-serif" font-size="10">5-Colors Planar</text>
                         <g stroke="#CBD5E1" stroke-width="1.2">
@@ -1227,13 +1230,13 @@
                             <line x1="430" y1="115" x2="485" y2="140"/><line x1="260" y1="285" x2="410" y2="255"/>
                         </g>
                         <g>
-                            <circle cx="140" cy="150" r="8" fill="#EF4444"/><circle cx="175" cy="140" r="7" fill="#3B82F6"/>
+                            <circle cx="140" cy="150" r="8" fill="#EF4444"/><circle cx="175" cy="140" r="7" fill="#A855F7"/>
                             <circle cx="210" cy="180" r="9" fill="#10B981"/><circle cx="155" cy="235" r="8" fill="#F59E0B"/>
                             <circle cx="290" cy="200" r="10" fill="#8B5CF6"/><circle cx="330" cy="215" r="7" fill="#EC4899"/>
-                            <circle cx="360" cy="165" r="9" fill="#3B82F6"/><circle cx="395" cy="140" r="7" fill="#10B981"/>
+                            <circle cx="360" cy="165" r="9" fill="#A855F7"/><circle cx="395" cy="140" r="7" fill="#10B981"/>
                             <circle cx="430" cy="115" r="9" fill="#EF4444"/><circle cx="485" cy="140" r="8" fill="#F59E0B"/>
                             <circle cx="260" cy="285" r="9" fill="#10B981"/><circle cx="410" cy="255" r="9" fill="#EF4444"/>
-                            <circle cx="490" cy="310" r="8" fill="#3B82F6"/><circle cx="455" cy="285" r="7" fill="#8B5CF6"/>
+                            <circle cx="490" cy="310" r="8" fill="#EC4899"/><circle cx="455" cy="285" r="7" fill="#8B5CF6"/>
                         </g>
                     </svg>`;
                 case 'algo-plateau':
@@ -1273,7 +1276,7 @@
                         <text x="275" y="54" fill="#0F172A" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700">CONCERT</text>
                         <line x1="235" y1="60" x2="370" y2="60" stroke="#334155"/>
                         <text x="243" y="78" fill="#334155" font-family="JetBrains Mono, monospace" font-size="9">PK_CONCERT</text>
-                        <text x="243" y="94" fill="#2563EB" font-family="JetBrains Mono, monospace" font-size="9">FK_IDLIEU / IDFEST</text>
+                        <text x="243" y="94" fill="#7E22CE" font-family="JetBrains Mono, monospace" font-size="9">FK_IDLIEU / IDFEST</text>
                         <text x="243" y="110" fill="#334155" font-family="JetBrains Mono, monospace" font-size="9">DATECONCERT</text>
 
                         <rect x="435" y="42" width="130" height="78" fill="#FEFCE8" stroke="#334155" stroke-width="1.5"/>
@@ -1298,7 +1301,7 @@
                 case 'reseau':
                     return `
                     <svg viewBox="0 0 600 360" class="w-full h-full bg-[#0F172A]">
-                        <rect width="600" height="42" fill="#0082C9"/>
+                        <rect width="600" height="42" fill="#7E22CE"/>
                         <text x="20" y="26" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="700">Nextcloud &amp; Infrastructure Debian (QEMU / NEmu)</text>
                         <rect x="18" y="58" width="265" height="280" rx="6" fill="#FFFFFF"/>
                         <text x="32" y="84" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="700">All files - 192.168.1.1 (HTTPS)</text>
@@ -1306,15 +1309,15 @@
                         <text x="32" y="118" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Photos (5.4 MB)</text>
                         <text x="32" y="142" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Shared Folder (Shared)</text>
                         <text x="32" y="166" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Templates (22.4 MB)</text>
-                        <text x="32" y="190" fill="#0284C7" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Nextcloud Manual.pdf</text>
+                        <text x="32" y="190" fill="#9333EA" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Nextcloud Manual.pdf</text>
                         <text x="32" y="214" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="11">Readme.md</text>
                         <rect x="300" y="58" width="282" height="132" rx="6" fill="#090D16" stroke="#334155"/>
                         <text x="314" y="82" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">Debian GNU/Linux 13 router tty1</text>
-                        <text x="314" y="104" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="11">router login: root</text>
+                        <text x="314" y="104" fill="#F472B6" font-family="JetBrains Mono, monospace" font-size="11">router login: root</text>
                         <text x="314" y="126" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="11">(root@router)-[ip_forward=1]</text>
                         <rect x="300" y="206" width="282" height="132" rx="6" fill="#090D16" stroke="#334155"/>
                         <text x="314" y="230" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="11">Debian GNU/Linux 13 ncloud tty1</text>
-                        <text x="314" y="252" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="11">ncloud login: root (TLS + 2FA TOTP)</text>
+                        <text x="314" y="252" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="11">ncloud login: root (TLS + 2FA TOTP)</text>
                         <text x="314" y="274" fill="#E2E8F0" font-family="JetBrains Mono, monospace" font-size="11">QEMU: alice | bob | office | router</text>
                     </svg>`;
                 case 'winforms':
@@ -1337,7 +1340,7 @@
                         <circle cx="492" cy="80" r="12" fill="#7E22CE"/>
                         <text x="448" y="210" fill="#334155" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700">Frederique</text>
 
-                        <rect x="24" y="280" width="220" height="44" rx="6" fill="#2563EB"/>
+                        <rect x="24" y="280" width="220" height="44" rx="6" fill="#9333EA"/>
                         <text x="65" y="307" fill="#FFFFFF" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600">Entraîner / Modifier</text>
                         <rect x="452" y="280" width="120" height="44" rx="6" fill="#E2E8F0" stroke="#64748B"/>
                         <text x="490" y="307" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600">Quitter</text>
@@ -1347,21 +1350,21 @@
 
         /* Retourne l'icône FontAwesome associée au mode de travail */
         function getTeamBadgeHtml(teamText) {
-            if (teamText === 'En équipe') {
-                return `<span class="inline-flex items-center gap-2 text-indigo-300 font-medium"><i class="fa-solid fa-users-gear text-indigo-400"></i>En équipe</span>`;
+            if (teamText.startsWith('En équipe')) {
+                return `<span class="inline-flex items-center gap-2 text-purple-300 font-medium"><i class="fa-solid fa-users-gear text-purple-400"></i>${teamText}</span>`;
             }
-            if (teamText === 'En binôme') {
-                return `<span class="inline-flex items-center gap-2 text-cyan-300 font-medium"><i class="fa-solid fa-user-group text-cyan-400"></i>En binôme</span>`;
+            if (teamText.startsWith('En binôme')) {
+                return `<span class="inline-flex items-center gap-2 text-pink-300 font-medium"><i class="fa-solid fa-user-group text-pink-400"></i>${teamText}</span>`;
             }
-            return `<span class="inline-flex items-center gap-2 text-emerald-300 font-medium"><i class="fa-solid fa-user text-emerald-400"></i>En solo</span>`;
+            return `<span class="inline-flex items-center gap-2 text-fuchsia-300 font-medium"><i class="fa-solid fa-user text-fuchsia-400"></i>${teamText}</span>`;
         }
 
-        /* Liste des 8 projets (sans "Visu" ni "Odomo") */
+        /* Liste des 8 projets (sans "Visu" ni "Odomo", sans "Boucle do...while" et avec "VSCode" dans Visualisation de données) */
         const projectsData = [
             {
                 id: 'visualisation',
                 title: 'Visualisation de données',
-                team: 'En équipe',
+                team: 'En équipe • 2 semaines',
                 categories: ['data', 'logiciel'],
                 tags: ['Python', 'C#', 'SQL'],
                 images: ['ImagesIllustration/VisualisationDeDonnees.png'],
@@ -1370,12 +1373,12 @@
                 cahierDesCharges: "Concevoir une base de données adaptée aux besoins, récupérer les fichiers CSV fournis, nettoyer et intégrer les données dans la base en Python, puis permettre l'export de graphiques et de cartes en PNG/PDF depuis une interface C#.",
                 kpis: "Création de la base de données, nettoyage et import des CSV en Python fonctionnels. Interface C# livrée sous forme d'exécutable (application.exe) permettant d'afficher et d'enregistrer les cartes et graphiques selon les critères choisis.",
                 skills: ['Maîtrise des dataframes en Python', 'Intégration de plusieurs langages', 'Tests précis sur la base en SQL', 'Travail en équipe'],
-                tools: ['Python', 'C#', 'SQL Server', 'Visual Studio', 'Git']
+                tools: ['Python', 'C#', 'SQL Server', 'Visual Studio', 'VSCode', 'Git']
             },
             {
                 id: 'implementation',
                 title: 'Implémentation',
-                team: 'En solo',
+                team: 'En solo • 3 semaines',
                 categories: ['logiciel'],
                 tags: ['Java', 'Algorithmie'],
                 images: ['ImagesIllustration/Implementation.png'],
@@ -1384,12 +1387,12 @@
                 cahierDesCharges: "Intégrer l'entièreté des fonctionnalités de gestion, de mise à jour des données météorologiques et de programmation du chauffage d'une station météo à partir d'un code existant à compléter.",
                 kpis: "Algorithme de décalage de tableaux implémenté. Intégrité des données garantie et saisie utilisateur sécurisée par boucle de contrôle.",
                 skills: ['Java', 'Algorithmique', 'Intégration des données'],
-                tools: ['Boucle do...while', 'Tableaux', 'Conditions', 'NetBeans']
+                tools: ['Tableaux', 'Conditions', 'NetBeans']
             },
             {
                 id: 'recueil-besoin',
                 title: 'Recueil de besoin',
-                team: 'En solo',
+                team: 'En solo • 3 semaines',
                 categories: ['web-reseau'],
                 tags: ['HTML', 'CSS', 'Web'],
                 images: [
@@ -1407,7 +1410,7 @@
             {
                 id: 'graphes',
                 title: 'Coloration de graphes',
-                team: 'En binôme',
+                team: 'En binôme • 1 mois',
                 categories: ['logiciel'],
                 tags: ['Java', 'Algorithmique', 'Graphes'],
                 images: ['ImagesIllustration/ColorationDeGraphes.png'],
@@ -1421,7 +1424,7 @@
             {
                 id: 'algo-plateau',
                 title: "Comparaisons d'algorithmes",
-                team: 'En binôme',
+                team: 'En binôme • 20 jours',
                 categories: ['logiciel'],
                 tags: ['Java', 'Algorithmie et Comparaison'],
                 images: ['ImagesIllustration/ComparaisonAlgorythmique.png'],
@@ -1435,7 +1438,7 @@
             {
                 id: 'bdd',
                 title: 'Création de Base de données',
-                team: 'En binôme',
+                team: 'En binôme • 1 mois',
                 categories: ['data'],
                 tags: ['SQL', 'Base de données', 'MCD'],
                 images: ['ImagesIllustration/CreationDeBaseDeDonnees.png'],
@@ -1449,7 +1452,7 @@
             {
                 id: 'reseau',
                 title: 'Installation de Services Réseaux',
-                team: 'En binôme',
+                team: 'En binôme • 3 semaines',
                 categories: ['web-reseau'],
                 tags: ['Linux', 'Réseau', 'Nextcloud'],
                 images: [
@@ -1466,7 +1469,7 @@
             {
                 id: 'winforms',
                 title: "Développement d'une application",
-                team: 'En équipe',
+                team: 'En équipe • 1 mois',
                 categories: ['logiciel'],
                 tags: ['C#', '.NET', 'WinForms', 'Git'],
                 images: ['ImagesIllustration/DeveloppementApplication.png'],
@@ -1490,7 +1493,7 @@
             grid.innerHTML = filtered.map(proj => `
                 <article onclick="openProjectModal('${proj.id}')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between cursor-pointer group h-full">
                     <div>
-                        <div class="relative h-48 bg-slate-950 overflow-hidden border-b border-slate-800">
+                        <div class="relative h-48 bg-dark-950 overflow-hidden border-b border-purple-500/20">
                             <img 
                                 src="${proj.images[0]}" 
                                 alt="${proj.title}" 
@@ -1504,9 +1507,9 @@
 
                         <div class="p-6">
                             <div class="flex flex-wrap gap-1.5 mb-3">
-                                ${proj.tags.map(t => `<span class="px-2.5 py-0.5 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-300 font-mono text-[11px]">${t}</span>`).join('')}
+                                ${proj.tags.map(t => `<span class="px-2.5 py-0.5 rounded-md bg-purple-500/15 border border-purple-500/30 text-purple-200 font-mono text-[11px]">${t}</span>`).join('')}
                             </div>
-                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
+                            <h3 class="text-lg font-bold text-white group-hover:text-pink-400 transition-colors mb-2">
                                 ${proj.title}
                             </h3>
                             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
@@ -1515,9 +1518,9 @@
                         </div>
                     </div>
 
-                    <div class="px-6 pb-5 pt-3.5 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono">
+                    <div class="px-6 pb-5 pt-3.5 border-t border-purple-500/15 flex items-center justify-between text-xs font-mono">
                         ${getTeamBadgeHtml(proj.team)}
-                        <span class="text-blue-400 group-hover:translate-x-1 transition-transform font-semibold inline-flex items-center gap-1.5">
+                        <span class="text-pink-400 group-hover:translate-x-1 transition-transform font-semibold inline-flex items-center gap-1.5">
                             Détails <i class="fa-solid fa-arrow-right text-[10px]"></i>
                         </span>
                     </div>
@@ -1528,9 +1531,9 @@
         function filterProjects(category) {
             document.querySelectorAll('.proj-tab-btn').forEach(btn => {
                 if (btn.getAttribute('data-proj-btn') === category) {
-                    btn.className = 'proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-blue-600 text-white shadow-lg shadow-blue-600/25 transition-all whitespace-nowrap';
+                    btn.className = 'proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-violet-600 to-pink-600 text-white shadow-lg shadow-purple-600/25 transition-all whitespace-nowrap';
                 } else {
-                    btn.className = 'proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap';
+                    btn.className = 'proj-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap';
                 }
             });
             renderProjects(category);
@@ -1540,9 +1543,9 @@
         function filterSkills(cat) {
             document.querySelectorAll('.skill-tab-btn').forEach(btn => {
                 if (btn.getAttribute('data-skill-btn') === cat) {
-                    btn.className = 'skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-blue-600 text-white shadow-lg shadow-blue-600/25 transition-all whitespace-nowrap';
+                    btn.className = 'skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-violet-600 to-pink-600 text-white shadow-lg shadow-purple-600/25 transition-all whitespace-nowrap';
                 } else {
-                    btn.className = 'skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700 transition-all whitespace-nowrap';
+                    btn.className = 'skill-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium bg-dark-800/90 text-slate-300 hover:text-white border border-purple-500/25 transition-all whitespace-nowrap';
                 }
             });
 
@@ -1570,15 +1573,15 @@
             document.getElementById('modal-kpis').textContent = proj.kpis;
 
             document.getElementById('modal-tags').innerHTML = proj.tags.map(t => 
-                `<span class="px-2.5 py-1 rounded-lg bg-slate-800 text-blue-300 font-mono text-xs border border-slate-700">${t}</span>`
+                `<span class="px-2.5 py-1 rounded-lg bg-dark-800 text-purple-200 font-mono text-xs border border-purple-500/30">${t}</span>`
             ).join('');
 
             document.getElementById('modal-skills').innerHTML = proj.skills.map(s =>
-                `<span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">${s}</span>`
+                `<span class="px-2.5 py-1 rounded-lg bg-dark-950 border border-purple-500/25 text-xs text-slate-200">${s}</span>`
             ).join('');
 
             document.getElementById('modal-tools').innerHTML = proj.tools.map(t =>
-                `<span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs font-mono text-cyan-300">${t}</span>`
+                `<span class="px-2.5 py-1 rounded-lg bg-dark-950 border border-pink-500/30 text-xs font-mono text-pink-300">${t}</span>`
             ).join('');
 
             setModalActiveImage(0);
@@ -1613,7 +1616,7 @@
                         type="button"
                         onclick="setModalActiveImage(${idx})" 
                         aria-label="Vue ${idx + 1}"
-                        class="relative w-20 h-14 rounded-xl overflow-hidden border-2 transition-all shrink-0 bg-slate-950 ${idx === index ? 'border-blue-500 ring-2 ring-blue-500/30' : 'border-slate-700 opacity-60 hover:opacity-100'}"
+                        class="relative w-20 h-14 rounded-xl overflow-hidden border-2 transition-all shrink-0 bg-dark-950 ${idx === index ? 'border-pink-500 ring-2 ring-pink-500/30' : 'border-purple-500/30 opacity-60 hover:opacity-100'}"
                     >
                         <img 
                             src="${imgSrc}" 
@@ -1621,7 +1624,7 @@
                             class="w-full h-full object-cover"
                             onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
                         >
-                        <span class="hidden w-full h-full flex items-center justify-center font-mono text-xs text-slate-300 bg-slate-900">
+                        <span class="hidden w-full h-full flex items-center justify-center font-mono text-xs text-slate-300 bg-dark-900">
                             Vue ${idx + 1}
                         </span>
                     </button>
@@ -1668,6 +1671,38 @@
             setTimeout(() => {
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
+        }
+
+        /* Téléchargement direct du CV en PDF sans ouvrir d'onglet dans Chrome */
+        async function forceDownloadCV(event) {
+            if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+                event.preventDefault();
+                try {
+                    const response = await fetch('CV_Mouad_MOUJTAHID.pdf');
+                    if (!response.ok) throw new Error('Fichier introuvable');
+                    const blob = await response.blob();
+                    const octetBlob = new Blob([blob], { type: 'application/octet-stream' });
+                    const blobUrl = window.URL.createObjectURL(octetBlob);
+                    const tempLink = document.createElement('a');
+                    tempLink.style.display = 'none';
+                    tempLink.href = blobUrl;
+                    tempLink.setAttribute('download', 'CV_Mouad_MOUJTAHID.pdf');
+                    document.body.appendChild(tempLink);
+                    tempLink.click();
+                    document.body.removeChild(tempLink);
+                    setTimeout(() => window.URL.revokeObjectURL(blobUrl), 1500);
+                    showToast('Téléchargement du CV lancé !');
+                } catch (error) {
+                    const fallbackLink = document.createElement('a');
+                    fallbackLink.href = 'CV_Mouad_MOUJTAHID.pdf';
+                    fallbackLink.setAttribute('download', 'CV_Mouad_MOUJTAHID.pdf');
+                    document.body.appendChild(fallbackLink);
+                    fallbackLink.click();
+                    document.body.removeChild(fallbackLink);
+                }
+            } else {
+                showToast('Téléchargement du CV...');
+            }
         }
 
         /* Préparation de l'e-mail à partir des 2 champs du formulaire */
