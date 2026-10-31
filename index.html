@@ -83,14 +83,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Recadrage centré sur le visage pour PP.png */
-        .profile-crop {
-            object-fit: cover;
-            object-position: 50% 34%;
-            transform: scale(1.14);
-            transform-origin: 50% 38%;
-        }
-
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -245,8 +237,8 @@
                     </a>
                 </div>
 
-                <!-- Grille 2x2 parfaitement alignée pour LinkedIn, Mail complet, Localisation, Âge & Permis B -->
-                <div class="pt-7 border-t border-purple-500/15 grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left">
+                <!-- Grille 3 colonnes équilibrée (sans photo, ni âge, ni permis) : LinkedIn, Adresse e-mail complète, Localisation -->
+                <div class="pt-7 border-t border-purple-500/15 grid grid-cols-1 md:grid-cols-3 gap-3.5 text-left">
                     
                     <!-- 1. LinkedIn -->
                     <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-purple-400/50 transition-all group">
@@ -261,13 +253,13 @@
 
                     <!-- 2. Email Universitaire (affiché en entier sans coupure) -->
                     <button type="button" onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="flex items-center justify-between gap-2 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-pink-400/50 transition-all group text-left">
-                        <div class="flex items-center gap-3.5 min-w-0 flex-1">
+                        <div class="flex items-center gap-3 min-w-0 flex-1">
                             <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0 group-hover:bg-pink-600 group-hover:text-white transition-colors">
                                 <i class="fa-regular fa-envelope text-base"></i>
                             </div>
                             <div class="min-w-0 flex-1">
                                 <span class="text-[11px] font-mono text-slate-400 block leading-tight">Adresse e-mail</span>
-                                <span class="text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-pink-300 block whitespace-nowrap">mouad.moujtahid@etu.u-bordeaux.fr</span>
+                                <span class="text-xs font-semibold text-slate-200 group-hover:text-pink-300 block whitespace-nowrap">mouad.moujtahid@etu.u-bordeaux.fr</span>
                             </div>
                         </div>
                         <i class="fa-regular fa-copy text-xs text-slate-400 group-hover:text-pink-300 shrink-0" title="Copier"></i>
@@ -281,17 +273,6 @@
                         <div class="min-w-0 flex-1">
                             <span class="text-[11px] font-mono text-slate-400 block leading-tight">Localisation</span>
                             <span class="text-xs sm:text-sm font-semibold text-slate-200 block">Bordeaux (33) &bull; IUT de Bordeaux</span>
-                        </div>
-                    </div>
-
-                    <!-- 4. Âge & Permis B -->
-                    <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20">
-                        <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
-                            <i class="fa-solid fa-id-card text-base"></i>
-                        </div>
-                        <div class="min-w-0 flex-1">
-                            <span class="text-[11px] font-mono text-slate-400 block leading-tight">Profil &amp; Mobilité</span>
-                            <span class="text-xs sm:text-sm font-semibold text-slate-200 block">19 ans &bull; Permis B</span>
                         </div>
                     </div>
 
@@ -912,9 +893,6 @@
                         </div>
                     </div>
 
-                    <!-- Colonne Droite : Formulaire d'envoi d'e-mail (2 champs) -->
-                    <div class="lg:col-span-6 bg-dark-900/90 rounded-2xl p-6 sm:p-8 border border-purple-500/25">
-                        <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2.5">
                     <!-- Colonne Droite : Accès direct E-mail & CV sans formulaire -->
                     <div class="lg:col-span-6 bg-dark-900/90 rounded-2xl p-6 sm:p-8 border border-purple-500/25 flex flex-col justify-between space-y-6">
                         <div class="space-y-3">
@@ -1302,7 +1280,7 @@
 
         /* Retourne l'icône FontAwesome associée au mode de travail */
         function getTeamBadgeHtml(teamText) {
-            if (teamText.startsWith('En équipe')) {
+            if (teamText.startsWith('En équipe') || teamText.startsWith('Équipe')) {
                 return `<span class="inline-flex items-center gap-2 text-purple-300 font-medium"><i class="fa-solid fa-users-gear text-purple-400"></i>${teamText}</span>`;
             }
             if (teamText.startsWith('En binôme')) {
@@ -1311,112 +1289,35 @@
             return `<span class="inline-flex items-center gap-2 text-fuchsia-300 font-medium"><i class="fa-solid fa-user text-fuchsia-400"></i>${teamText}</span>`;
         }
 
-        /* Liste des 8 projets (sans "Visu" ni "Odomo", sans "Boucle do...while" et avec "VSCode" dans Visualisation de données) */
+        /* Liste complète des 9 projets avec leurs vraies images du dossier ImagesIllustration */
         const projectsData = [
+            {
+                id: 'labyrinthe',
+                title: 'Labyrinthe',
+                team: 'En solo • 2 semaines',
+                categories: ['logiciel'],
+                tags: ['Java', 'JavaFX', 'POO'],
+                images: ['ImagesIllustration/Labyrinthe.png', 'Labyrinthe.png', 'ImagesIllustration/Labyrinthe.jpg'],
+                svgType: 'labyrinthe',
+                summary: "Jeu de labyrinthe multi-étages en Java/JavaFX, développé seul : héros piloté au clavier, monstres autonomes et déplacements fluides.",
+                cahierDesCharges: "Concevoir seul, en deux semaines, un jeu de labyrinthe complet en Java/JavaFX pour remobiliser la programmation orientée objet. Contraintes : implémenter des interfaces imposées sans les modifier, valider les objectifs dans l'ordre et livrer un programme sans erreur ni avertissement sur les postes de l'IUT.",
+                kpis: "Labyrinthe sur plusieurs étages chargé depuis des fichiers texte, héros jouable au clavier et monstres autonomes grâce au polymorphisme. La logique du jeu est séparée du rendu, ce qui donne un déplacement fluide au pixel près. Plus de 50 commits sur GitLab, projet validé sur les postes de l'IUT.",
+                skills: ['Programmation orientée objet', 'Interface graphique événementielle', 'Débogage', 'Versionnage Git'],
+                tools: ['Java', 'JavaFX', 'Maven', 'Git / GitLab']
+            },
             {
                 id: 'visualisation',
                 title: 'Visualisation de données',
-                team: 'En équipe • 2 semaines',
+                team: 'Équipe de 5 • 2 semaines à temps plein',
                 categories: ['data', 'logiciel'],
                 tags: ['Python', 'C#', 'SQL'],
                 images: ['ImagesIllustration/VisualisationDeDonnees.png'],
                 svgType: 'visu',
-                summary: "Application d'analyse de données environnementales en Nouvelle-Aquitaine : création de la base, nettoyage et import des CSV en Python, interface C# avec graphiques.",
+                summary: "Application d'analyse et de visualisation de données environnementales en Nouvelle-Aquitaine : base SQL Server, nettoyage Python et interface C#.",
                 cahierDesCharges: "Concevoir une base de données adaptée aux besoins, récupérer les fichiers CSV fournis, nettoyer et intégrer les données dans la base en Python, puis permettre l'export de graphiques et de cartes en PNG/PDF depuis une interface C#.",
                 kpis: "Création de la base de données, nettoyage et import des CSV en Python fonctionnels. Interface C# livrée sous forme d'exécutable (application.exe) permettant d'afficher et d'enregistrer les cartes et graphiques selon les critères choisis.",
                 skills: ['Maîtrise des dataframes en Python', 'Intégration de plusieurs langages', 'Tests précis sur la base en SQL', 'Travail en équipe'],
                 tools: ['Python', 'C#', 'SQL Server', 'Visual Studio', 'VSCode', 'Git']
-            },
-            {
-                id: 'implementation',
-                title: 'Implémentation',
-                team: 'En solo • 3 semaines',
-                categories: ['logiciel'],
-                tags: ['Java', 'Algorithmie'],
-                images: ['ImagesIllustration/Implementation.png'],
-                svgType: 'odomo',
-                summary: "Programmation d'une centrale domotique et station météo en Java avec gestion des capteurs et de l'historique des mesures.",
-                cahierDesCharges: "Intégrer l'entièreté des fonctionnalités de gestion, de mise à jour des données météorologiques et de programmation du chauffage d'une station météo à partir d'un code existant à compléter.",
-                kpis: "Algorithme de décalage de tableaux implémenté. Intégrité des données garantie et saisie utilisateur sécurisée par boucle de contrôle.",
-                skills: ['Java', 'Algorithmique', 'Intégration des données'],
-                tools: ['Tableaux', 'Conditions', 'NetBeans']
-            },
-            {
-                id: 'recueil-besoin',
-                title: 'Recueil de besoin',
-                team: 'En solo • 3 semaines',
-                categories: ['web-reseau'],
-                tags: ['HTML', 'CSS', 'Web'],
-                images: [
-                    'ImagesIllustration/RecueilDeBesoin1.png',
-                    'ImagesIllustration/RecueilDeBesoin2.png',
-                    'ImagesIllustration/RecueilDeBesoin3.png'
-                ],
-                svgType: 'retropc',
-                summary: "Modernisation d'un site web de dépannage informatique. Passage d'une ancienne mise en page en tableaux à CSS Grid.",
-                cahierDesCharges: "Moderniser le code source du site web d'une entreprise fictive de dépannage informatique en abandonnant la mise en page en tableaux, mettre en place un design responsive et améliorer l'accessibilité.",
-                kpis: "Refonte validée en HTML5 sémantique. Amélioration de l'accessibilité, intégration responsive et réduction de la taille du code source.",
-                skills: ['Intégration web', 'Refactoring', 'Écoute du client', 'Intégration responsive'],
-                tools: ['HTML5', 'CSS Grid', 'Design System', 'VSCode']
-            },
-            {
-                id: 'graphes',
-                title: 'Coloration de graphes',
-                team: 'En binôme • 1 mois',
-                categories: ['logiciel'],
-                tags: ['Java', 'Algorithmique', 'Graphes'],
-                images: ['ImagesIllustration/ColorationDeGraphes.png'],
-                svgType: 'graphes',
-                summary: "Développement et visualisation de trois algorithmes de coloration de graphes (Welsh & Powell, 5-coloration, 6-coloration).",
-                cahierDesCharges: "Implémenter l'interface IGraph, charger un graphe depuis des fichiers et programmer trois algorithmes de coloration (Welsh et Powell, 6-coloration et 5-coloration récursive pour graphes planaires).",
-                kpis: "Création d'une structure optimisée par liste d'adjacence (HashMap) avec une complexité en O(N+M). Algorithmes validés par des tests unitaires sous JUnit.",
-                skills: ['Développement orienté objet', 'Théorie des graphes', 'Analyse de complexité', 'Tests unitaires'],
-                tools: ['Java', 'JUnit', 'NetBeans', 'UML']
-            },
-            {
-                id: 'algo-plateau',
-                title: "Comparaisons d'algorithmes",
-                team: 'En binôme • 20 jours',
-                categories: ['logiciel'],
-                tags: ['Java', 'Algorithmie et Comparaison'],
-                images: ['ImagesIllustration/ComparaisonAlgorythmique.png'],
-                svgType: 'algo-plateau',
-                summary: "Programmation des fonctionnalités d'un jeu de plateau et conception de deux stratégies automatisées capables de jouer une partie complète.",
-                cahierDesCharges: "Coder les règles d'un jeu de plateau (plantation d'un arbre, coupes, vitalité) et développer deux joueurs automatisés : le premier utilisant un algorithme glouton et le second anticipant les coups sur plusieurs tours.",
-                kpis: "Mécanisme de clonage de plateau opérationnel pour simuler et évaluer les scores possibles. Aucune disqualification grâce à la vérification systématique des coups légaux.",
-                skills: ['Java', 'Algorithmie', 'Développement de tests', 'Travail en binôme avec Git'],
-                tools: ['Tests unitaires', 'Simulation algorithmique', 'Java', 'Git']
-            },
-            {
-                id: 'bdd',
-                title: 'Création de Base de données',
-                team: 'En binôme • 1 mois',
-                categories: ['data'],
-                tags: ['SQL', 'Base de données', 'MCD'],
-                images: ['ImagesIllustration/CreationDeBaseDeDonnees.png'],
-                svgType: 'bdd',
-                summary: "Conception d'une base de données pour une agence d'événements culturels fictive et traduction du cahier des charges en contraintes SQL.",
-                cahierDesCharges: "Concevoir un schéma entité-association, générer et compléter le script de création de la base pour une agence événementielle fictive en traduisant les règles de gestion pour éviter les incohérences de planning.",
-                kpis: "Scripts SQL implémentés avec une gestion complète des contraintes d'intégrité et insertion d'un jeu de données cohérent.",
-                skills: ['Modélisation relationnelle', 'SQL', 'Contraintes CHECK/UNIQUE'],
-                tools: ['SQL', 'SQL Server', "Win'Design", 'Schéma entités-associations (MCD)']
-            },
-            {
-                id: 'reseau',
-                title: 'Installation de Services Réseaux',
-                team: 'En binôme • 3 semaines',
-                categories: ['web-reseau'],
-                tags: ['Linux', 'Réseau', 'Nextcloud'],
-                images: [
-                    'ImagesIllustration/InstallationDeServicesReseaux1.png',
-                    'ImagesIllustration/InstallationDeServicesReseaux2.png'
-                ],
-                svgType: 'reseau',
-                summary: "Déploiement d'une infrastructure réseau virtuelle sous Debian Linux et intégration des services collaboratifs Nextcloud et OnlyOffice.",
-                cahierDesCharges: "Simuler et configurer un environnement réseau avec deux sous-réseaux isolés (Client LAN et Server LAN) reliés par un routeur central sous Debian, puis déployer une plateforme collaborative auto-hébergée.",
-                kpis: "Routage inter-réseaux (IP forwarding) et persistance des configurations IP opérationnels. Sécurisation des flux via certificats TLS (HTTPS) et authentification double facteur (TOTP).",
-                skills: ['Administration système (Linux)', 'Routage réseau', 'Sécurité (TLS/HTTPS, 2FA)', 'Déploiement de services'],
-                tools: ['NEmu / QEMU', 'Nextcloud', 'OnlyOffice', 'Bash/Shell']
             },
             {
                 id: 'winforms',
@@ -1433,22 +1334,116 @@
                 tools: ['Visual Studio / .NET', 'WinForms', 'Git']
             },
             {
-                id: 'labyrinthe',
-                title: 'Labyrinthe',
-                team: 'En solo • 2 semaines',
+                id: 'graphes',
+                title: 'Coloration de graphes',
+                team: 'En binôme • 1 mois',
                 categories: ['logiciel'],
-                tags: ['Java', 'JavaFX', 'POO'],
-                images: ['ImagesIllustration/Labyrinthe.png'],
-                svgType: 'labyrinthe',
-                summary: "Jeu de labyrinthe multi-étages en Java/JavaFX, développé seul : héros piloté au clavier, monstres autonomes et déplacements fluides.",
-                cahierDesCharges: "Concevoir seul, en deux semaines, un jeu de labyrinthe complet en Java/JavaFX pour remobiliser la programmation orientée objet. Contraintes : implémenter des interfaces imposées sans les modifier, valider les objectifs dans l'ordre et livrer un programme sans erreur ni avertissement sur les postes de l'IUT.",
-                kpis: "Labyrinthe sur plusieurs étages chargé depuis des fichiers texte, héros jouable au clavier et monstres autonomes grâce au polymorphisme. La logique du jeu est séparée du rendu, ce qui donne un déplacement fluide au pixel près. Plus de 50 commits sur GitLab, projet validé sur les postes de l'IUT.",
-                skills: ['Programmation orientée objet', 'Interface graphique événementielle', 'Débogage', 'Versionnage Git'],
-                tools: ['Java', 'JavaFX', 'Maven', 'Git / GitLab']
+                tags: ['Java', 'Algorithmique', 'Graphes'],
+                images: ['ImagesIllustration/ColorationDeGraphes.png'],
+                svgType: 'graphes',
+                summary: "Développement et visualisation de trois algorithmes de coloration de graphes (Welsh & Powell, 5-coloration, 6-coloration).",
+                cahierDesCharges: "Implémenter l'interface IGraph, charger un graphe depuis des fichiers et programmer trois algorithmes de coloration (Welsh et Powell, 6-coloration et 5-coloration récursive pour graphes planaires).",
+                kpis: "Création d'une structure optimisée par liste d'adjacence (HashMap) avec une complexité en O(N+M). Algorithmes validés par des tests unitaires sous JUnit.",
+                skills: ['Développement orienté objet', 'Théorie des graphes', 'Analyse de complexité', 'Tests unitaires'],
+                tools: ['Java', 'JUnit', 'NetBeans', 'UML']
+            },
+            {
+                id: 'bdd',
+                title: 'Création de Base de données',
+                team: 'En binôme • 3 semaines',
+                categories: ['data'],
+                tags: ['SQL', 'MCD / MLD', 'Base de données'],
+                images: ['ImagesIllustration/CreationDeBaseDeDonnees.png'],
+                svgType: 'bdd',
+                summary: "Conception d'une base de données pour une agence d'événements culturels fictive et traduction du cahier des charges en contraintes SQL.",
+                cahierDesCharges: "Concevoir un schéma entité-association, générer et compléter le script de création de la base pour une agence événementielle fictive en traduisant les règles de gestion pour éviter les incohérences de planning.",
+                kpis: "Scripts SQL implémentés avec une gestion complète des contraintes d'intégrité et insertion d'un jeu de données cohérent.",
+                skills: ['Modélisation relationnelle', 'SQL', 'Contraintes CHECK/UNIQUE'],
+                tools: ['SQL', 'SQL Server', "Win'Design", 'Schéma entités-associations (MCD)']
+            },
+            {
+                id: 'reseau',
+                title: 'Installation de Services Réseaux',
+                team: 'En binôme • 3 semaines',
+                categories: ['web-reseau'],
+                tags: ['Linux', 'Réseau', 'Virtualisation'],
+                images: [
+                    'ImagesIllustration/InstallationDeServicesReseaux1.png',
+                    'ImagesIllustration/InstallationDeServicesReseaux2.png'
+                ],
+                svgType: 'reseau',
+                summary: "Déploiement d'une infrastructure réseau virtuelle sous Debian Linux et intégration des services collaboratifs Nextcloud et OnlyOffice.",
+                cahierDesCharges: "Simuler et configurer un environnement réseau avec deux sous-réseaux isolés (Client LAN et Server LAN) reliés par un routeur central sous Debian, puis déployer une plateforme collaborative auto-hébergée.",
+                kpis: "Routage inter-réseaux (IP forwarding) et persistance des configurations IP opérationnels. Sécurisation des flux via certificats TLS (HTTPS) et authentification double facteur (TOTP).",
+                skills: ['Administration système (Linux)', 'Routage réseau', 'Sécurité (TLS/HTTPS, 2FA)', 'Déploiement de services'],
+                tools: ['NEmu / QEMU', 'Nextcloud', 'OnlyOffice', 'Bash/Shell']
+            },
+            {
+                id: 'algo-plateau',
+                title: "Comparaisons d'algorithmes",
+                team: 'En binôme • 20 jours',
+                categories: ['logiciel'],
+                tags: ['Java', 'Algorithmique', 'Complexité'],
+                images: ['ImagesIllustration/ComparaisonAlgorythmique.png'],
+                svgType: 'algo-plateau',
+                summary: "Programmation des fonctionnalités d'un jeu de plateau et conception de deux stratégies automatisées capables de jouer une partie complète.",
+                cahierDesCharges: "Coder les règles d'un jeu de plateau (plantation d'un arbre, coupes, vitalité) et développer deux joueurs automatisés : le premier utilisant un algorithme glouton et le second anticipant les coups sur plusieurs tours.",
+                kpis: "Mécanisme de clonage de plateau opérationnel pour simuler et évaluer les scores possibles. Aucune disqualification grâce à la vérification systématique des coups légaux.",
+                skills: ['Java', 'Algorithmie', 'Développement de tests', 'Travail en binôme avec Git'],
+                tools: ['Tests unitaires', 'Simulation algorithmique', 'Java', 'Git']
+            },
+            {
+                id: 'recueil-besoin',
+                title: 'Recueil de besoin',
+                team: 'En solo • 3 semaines',
+                categories: ['web-reseau'],
+                tags: ['HTML / CSS', 'UI / UX', 'Recueil de besoins'],
+                images: [
+                    'ImagesIllustration/RecueilDeBesoin1.png',
+                    'ImagesIllustration/RecueilDeBesoin2.png',
+                    'ImagesIllustration/RecueilDeBesoin3.png'
+                ],
+                svgType: 'retropc',
+                summary: "Modernisation d'un site web de dépannage informatique. Passage d'une ancienne mise en page en tableaux à CSS Grid.",
+                cahierDesCharges: "Moderniser le code source du site web d'une entreprise fictive de dépannage informatique en abandonnant la mise en page en tableaux, mettre en place un design responsive et améliorer l'accessibilité.",
+                kpis: "Refonte validée en HTML5 sémantique. Amélioration de l'accessibilité, intégration responsive et réduction de la taille du code source.",
+                skills: ['Intégration web', 'Refactoring', 'Écoute du client', 'Intégration responsive'],
+                tools: ['HTML5', 'CSS Grid', 'Design System', 'VSCode']
+            },
+            {
+                id: 'implementation',
+                title: 'Implémentation',
+                team: 'En solo • 3 semaines',
+                categories: ['logiciel'],
+                tags: ['Java', 'Algorithmique'],
+                images: ['ImagesIllustration/Implementation.png'],
+                svgType: 'odomo',
+                summary: "Programmation d'une centrale domotique et station météo en Java avec gestion des capteurs et de l'historique des mesures.",
+                cahierDesCharges: "Intégrer l'entièreté des fonctionnalités de gestion, de mise à jour des données météorologiques et de programmation du chauffage d'une station météo à partir d'un code existant à compléter.",
+                kpis: "Algorithme de décalage de tableaux implémenté. Intégrité des données garantie et saisie utilisateur sécurisée par boucle de contrôle.",
+                skills: ['Java', 'Algorithmique', 'Intégration des données'],
+                tools: ['Tableaux', 'Conditions', 'NetBeans']
             }
         ];
 
-        /* Affichage de la grille des projets */
+        /* Gestion intelligente de chargement d'image : teste les chemins alternatifs avant d'utiliser un visuel de secours */
+        function handleProjectImgError(imgEl, projectId) {
+            const proj = projectsData.find(p => p.id === projectId);
+            if (!proj) return;
+            const currentIdx = parseInt(imgEl.getAttribute('data-fallback-idx') || '0', 10);
+            const nextIdx = currentIdx + 1;
+            if (nextIdx < proj.images.length) {
+                imgEl.setAttribute('data-fallback-idx', nextIdx.toString());
+                imgEl.src = proj.images[nextIdx];
+            } else {
+                imgEl.style.display = 'none';
+                if (imgEl.nextElementSibling) {
+                    imgEl.nextElementSibling.classList.remove('hidden');
+                }
+            }
+        }
+
+        /* Affichage de la grille des projets : utilise directement la vraie image de chaque projet */
         function renderProjects(filter = 'all') {
             const grid = document.getElementById('projects-grid');
             const filtered = projectsData.filter(p => {
@@ -1459,12 +1454,13 @@
             grid.innerHTML = filtered.map(proj => `
                 <article onclick="openProjectModal('${proj.id}')" class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between cursor-pointer group h-full">
                     <div>
-                        <div class="relative h-48 bg-dark-950 overflow-hidden border-b border-purple-500/20">
+                        <div class="relative h-52 bg-dark-950 overflow-hidden border-b border-purple-500/20 flex items-center justify-center">
                             <img 
                                 src="${proj.images[0]}" 
+                                data-fallback-idx="0"
                                 alt="${proj.title}" 
-                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                                onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                                class="w-full h-full ${proj.id === 'labyrinthe' ? 'object-contain p-2 bg-[#161923]' : 'object-cover object-top'} group-hover:scale-105 transition-transform duration-500"
+                                onerror="handleProjectImgError(this, '${proj.id}')"
                             >
                             <div class="hidden w-full h-full">
                                 ${getProjectSvgIllustration(proj.svgType)}
@@ -1566,9 +1562,10 @@
             container.innerHTML = `
                 <img 
                     src="${imgPath}" 
+                    data-fallback-idx="${index}"
                     alt="${currentModalProject.title}" 
                     class="w-full h-auto max-h-[340px] object-contain"
-                    onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                    onerror="handleProjectImgError(this, '${currentModalProject.id}')"
                 >
                 <div class="hidden w-full h-full">
                     ${getProjectSvgIllustration(currentModalProject.svgType)}
@@ -1576,7 +1573,9 @@
             `;
 
             const thumbsContainer = document.getElementById('modal-thumbs');
-            if (currentModalProject.images.length > 1) {
+            /* N'affiche les miniatures que pour les projets ayant réellement plusieurs captures différentes (Recueil de besoin et Réseau) */
+            const hasMultipleDistinctViews = (currentModalProject.id === 'recueil-besoin' || currentModalProject.id === 'reseau');
+            if (hasMultipleDistinctViews && currentModalProject.images.length > 1) {
                 thumbsContainer.innerHTML = currentModalProject.images.map((imgSrc, idx) => `
                     <button 
                         type="button"
