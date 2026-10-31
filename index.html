@@ -149,8 +149,8 @@
 
             <!-- Boutons d'action -->
             <div class="hidden md:flex items-center gap-3">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium text-slate-200 bg-dark-800/90 hover:bg-dark-700 border border-purple-500/25 transition-all flex items-center gap-2 whitespace-nowrap">
-                    <i class="fa-solid fa-file-arrow-down text-pink-400"></i>
+                <a href="CV_Mouad_MOUJTAHID.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium text-slate-200 bg-dark-800/90 hover:bg-dark-700 border border-purple-500/25 transition-all flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-file-pdf text-pink-400"></i>
                     <span>Télécharger mon CV</span>
                 </a>
                 <a href="#contact" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 shadow-lg shadow-purple-600/25 transition-all flex items-center gap-2 whitespace-nowrap">
@@ -173,8 +173,8 @@
             <a href="#parcours" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Parcours</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-slate-200 hover:bg-white/5 font-medium">Contact</a>
             <div class="pt-3 border-t border-purple-500/20">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-download"></i> Télécharger mon CV (PDF)
+                <a href="CV_Mouad_MOUJTAHID.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV (PDF)
                 </a>
             </div>
         </div>
@@ -183,184 +183,119 @@
     <!-- ==================== HERO SECTION ==================== -->
     <main class="relative z-10 pt-28 pb-16 sm:pt-36 sm:pb-24">
         <section id="accueil" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            <div class="max-w-5xl mx-auto space-y-7 text-center lg:text-left">
                 
-                <!-- Colonne Gauche : Présentation & Informations parfaitement alignées -->
-                <div class="lg:col-span-8 space-y-6 text-center lg:text-left min-w-0">
-                    
-                    <!-- Badge Recherche de stage -->
-                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-200 text-xs sm:text-sm font-mono font-medium">
-                        <span class="relative flex h-2.5 w-2.5 shrink-0">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pink-500"></span>
+                <!-- Badge Recherche de stage -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-200 text-xs sm:text-sm font-mono font-medium">
+                    <span class="relative flex h-2.5 w-2.5 shrink-0">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pink-500"></span>
+                    </span>
+                    <span>RECHERCHE DE STAGE &bull; À PARTIR DU 18 JANVIER 2027</span>
+                </div>
+
+                <!-- Titre Principal -->
+                <div class="space-y-3">
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+                        Mouad <span class="text-gradient">MOUJTAHID</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-200 leading-snug pt-1">
+                        Étudiant en <span class="text-white">BUT Informatique</span> &amp; <span class="text-pink-400">DU IA</span>
+                    </h2>
+                </div>
+
+                <!-- Texte de présentation naturel et professionnel -->
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
+                    Étudiant en deuxième année de <strong class="text-white font-semibold">BUT Informatique</strong> et en <strong class="text-white font-semibold">Diplôme Universitaire Intelligence Artificielle</strong> à l'IUT de Bordeaux, je recherche un <strong class="text-pink-300 font-semibold">stage en développement informatique de 10 semaines à partir du 18 janvier 2027</strong>. Mes projets académiques m'ont permis de pratiquer le développement logiciel, le web, les bases de données et l'analyse de données.
+                </p>
+
+                <!-- Domaines ciblés : alignement strict sur UNE SEULE LIGNE -->
+                <div class="pt-1">
+                    <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-2.5">
+                        <span class="text-xs font-mono text-slate-400 shrink-0 mr-1">Domaines ciblés :</span>
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-800/95 border border-purple-500/30 text-xs font-mono text-purple-200 inline-flex items-center gap-2 whitespace-nowrap shrink-0">
+                            <i class="fa-solid fa-code text-purple-400"></i>Développement Logiciel
                         </span>
-                        <span>RECHERCHE DE STAGE &bull; À PARTIR DU 18 JANVIER 2027</span>
-                    </div>
-
-                    <!-- Titre Principal -->
-                    <div class="space-y-3">
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
-                            Mouad <span class="text-gradient">MOUJTAHID</span>
-                        </h1>
-                        <h2 class="text-xl sm:text-2xl lg:text-[26px] font-bold text-slate-200 leading-snug pt-1">
-                            Étudiant en <span class="text-white">BUT Informatique</span> &amp; <span class="text-pink-400">DU IA</span>
-                        </h2>
-                    </div>
-
-                    <!-- Texte de présentation naturel et professionnel -->
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
-                        Étudiant en deuxième année de <strong class="text-white font-semibold">BUT Informatique</strong> et en <strong class="text-white font-semibold">Diplôme Universitaire Intelligence Artificielle</strong> à l'IUT de Bordeaux, je recherche un <strong class="text-pink-300 font-semibold">stage en développement informatique de 10 semaines à partir du 18 janvier 2027</strong>. Mes projets académiques m'ont permis de pratiquer le développement logiciel, le web, les bases de données et l'analyse de données.
-                    </p>
-
-                    <!-- Domaines ciblés : alignement strict sur UNE SEULE LIGNE sur desktop -->
-                    <div class="pt-1">
-                        <div class="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-2">
-                            <span class="text-xs font-mono text-slate-400 shrink-0 mr-0.5">Domaines ciblés :</span>
-                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-purple-500/30 text-xs font-mono text-purple-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
-                                <i class="fa-solid fa-code text-purple-400"></i>Développement Logiciel
-                            </span>
-                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-pink-500/30 text-xs font-mono text-pink-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
-                                <i class="fa-solid fa-globe text-pink-400"></i>Développement Web
-                            </span>
-                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-fuchsia-500/30 text-xs font-mono text-fuchsia-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
-                                <i class="fa-solid fa-database text-fuchsia-400"></i>Bases de Données
-                            </span>
-                            <span class="px-2.5 py-1.5 rounded-xl bg-dark-800/95 border border-violet-500/30 text-xs font-mono text-violet-200 inline-flex items-center gap-1.5 whitespace-nowrap shrink-0">
-                                <i class="fa-solid fa-brain text-violet-400"></i>Data &amp; IA
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- 3 Boutons d'action principaux alignés sur UNE SEULE LIGNE -->
-                    <div class="flex flex-wrap sm:flex-nowrap items-center justify-center lg:justify-start gap-3 pt-2">
-                        <a href="#projets" class="px-5 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 shadow-xl shadow-purple-600/25 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
-                            <span>Découvrir mes réalisations</span>
-                            <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </a>
-
-                        <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-100 bg-dark-800/95 hover:bg-dark-700 border border-purple-500/30 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
-                            <i class="fa-solid fa-file-arrow-down text-pink-400"></i>
-                            <span>Télécharger mon CV (PDF)</span>
-                        </a>
-
-                        <a href="#contact" class="px-5 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white hover:bg-white/5 border border-purple-500/20 inline-flex items-center justify-center transition-all whitespace-nowrap shrink-0">
-                            Me contacter
-                        </a>
-                    </div>
-
-                    <!-- Grille 2x2 parfaitement alignée pour LinkedIn, Mail complet, Localisation, Âge & Permis B -->
-                    <div class="pt-6 border-t border-purple-500/15 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-                        
-                        <!-- 1. LinkedIn -->
-                        <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-purple-400/50 transition-all group">
-                            <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-300 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                                <i class="fa-brands fa-linkedin-in text-base"></i>
-                            </div>
-                            <div class="min-w-0 flex-1">
-                                <span class="text-[11px] font-mono text-slate-400 block leading-tight">LinkedIn</span>
-                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 group-hover:text-purple-300 block truncate">linkedin.com/in/mouad-moujtahid</span>
-                            </div>
-                        </a>
-
-                        <!-- 2. Email Universitaire (affiché en entier sans coupure) -->
-                        <button type="button" onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="flex items-center justify-between gap-2 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-pink-400/50 transition-all group text-left">
-                            <div class="flex items-center gap-3 min-w-0 flex-1">
-                                <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0 group-hover:bg-pink-600 group-hover:text-white transition-colors">
-                                    <i class="fa-regular fa-envelope text-base"></i>
-                                </div>
-                                <div class="min-w-0 flex-1">
-                                    <span class="text-[11px] font-mono text-slate-400 block leading-tight">Adresse e-mail</span>
-                                    <span class="text-xs sm:text-[13px] font-semibold text-slate-200 group-hover:text-pink-300 block whitespace-nowrap">mouad.moujtahid@etu.u-bordeaux.fr</span>
-                                </div>
-                            </div>
-                            <i class="fa-regular fa-copy text-xs text-slate-400 group-hover:text-pink-300 shrink-0" title="Copier"></i>
-                        </button>
-
-                        <!-- 3. Localisation -->
-                        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20">
-                            <div class="w-10 h-10 rounded-xl bg-fuchsia-500/15 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-300 shrink-0">
-                                <i class="fa-solid fa-location-dot text-base"></i>
-                            </div>
-                            <div class="min-w-0 flex-1">
-                                <span class="text-[11px] font-mono text-slate-400 block leading-tight">Localisation</span>
-                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 block">Bordeaux (33) &bull; IUT de Bordeaux</span>
-                            </div>
-                        </div>
-
-                        <!-- 4. Âge & Permis B -->
-                        <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-dark-900/85 border border-purple-500/20">
-                            <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
-                                <i class="fa-solid fa-id-card text-base"></i>
-                            </div>
-                            <div class="min-w-0 flex-1">
-                                <span class="text-[11px] font-mono text-slate-400 block leading-tight">Profil &amp; Mobilité</span>
-                                <span class="text-xs sm:text-[13px] font-semibold text-slate-200 block">19 ans &bull; Permis B</span>
-                            </div>
-                        </div>
-
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-800/95 border border-pink-500/30 text-xs font-mono text-pink-200 inline-flex items-center gap-2 whitespace-nowrap shrink-0">
+                            <i class="fa-solid fa-globe text-pink-400"></i>Développement Web
+                        </span>
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-800/95 border border-fuchsia-500/30 text-xs font-mono text-fuchsia-200 inline-flex items-center gap-2 whitespace-nowrap shrink-0">
+                            <i class="fa-solid fa-database text-fuchsia-400"></i>Bases de Données
+                        </span>
+                        <span class="px-3 py-1.5 rounded-xl bg-dark-800/95 border border-violet-500/30 text-xs font-mono text-violet-200 inline-flex items-center gap-2 whitespace-nowrap shrink-0">
+                            <i class="fa-solid fa-brain text-violet-400"></i>Data &amp; IA
+                        </span>
                     </div>
                 </div>
 
-                <!-- Colonne Droite : Carte Photo de profil soignée -->
-                <div class="lg:col-span-4 flex justify-center lg:justify-end">
-                    <div class="relative w-full max-w-[340px]">
-                        <!-- Halo lumineux Violet / Rose autour de la carte -->
-                        <div class="absolute -inset-1.5 bg-gradient-to-tr from-violet-600/45 via-purple-500/35 to-pink-500/45 rounded-3xl blur-xl opacity-70"></div>
-                        
-                        <div class="relative glass-card rounded-3xl p-5 border border-purple-500/20 shadow-2xl">
-                            <!-- Cadre Photo recadré sur le visage -->
-                            <div class="relative w-full aspect-[4/4.6] rounded-2xl overflow-hidden bg-slate-200 border border-purple-500/30 shadow-inner">
-                                <img 
-                                    src="PP.png" 
-                                    alt="Mouad MOUJTAHID" 
-                                    class="w-full h-full profile-crop"
-                                    onerror="this.style.display='none'; document.getElementById('profile-photo-fallback').classList.remove('hidden');"
-                                >
-                                <!-- Illustration de secours uniquement si PP.png n'est pas dans le dossier -->
-                                <div id="profile-photo-fallback" class="hidden w-full h-full flex items-center justify-center bg-gradient-to-b from-slate-100 to-slate-300">
-                                    <svg viewBox="0 0 220 220" class="w-full h-full">
-                                        <defs>
-                                            <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
-                                                <stop offset="0%" stop-color="#D99B72"/>
-                                                <stop offset="100%" stop-color="#BA7A52"/>
-                                            </linearGradient>
-                                            <linearGradient id="poloGrad" x1="0" y1="0" x2="1" y2="1">
-                                                <stop offset="0%" stop-color="#E6DAC3"/>
-                                                <stop offset="100%" stop-color="#CFC0A6"/>
-                                            </linearGradient>
-                                        </defs>
-                                        <path d="M10,220 C15,168 55,152 110,152 C165,152 205,168 210,220 Z" fill="url(#poloGrad)"/>
-                                        <rect x="88" y="118" width="44" height="42" rx="14" fill="url(#skinGrad)"/>
-                                        <path d="M72,150 L106,172 L84,184 L62,158 Z" fill="#EDE3CE"/>
-                                        <path d="M148,150 L114,172 L136,184 L158,158 Z" fill="#EDE3CE"/>
-                                        <ellipse cx="62" cy="78" rx="8" ry="14" fill="#C6865E"/>
-                                        <ellipse cx="158" cy="78" rx="8" ry="14" fill="#C6865E"/>
-                                        <rect x="66" y="22" width="88" height="108" rx="42" fill="url(#skinGrad)"/>
-                                        <path d="M65,62 C62,28 80,10 112,10 C142,10 158,28 155,62 C152,45 144,34 128,30 C105,26 84,32 72,48 Z" fill="#141619"/>
-                                        <path d="M80,62 Q92,57 102,62" stroke="#1F242D" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-                                        <path d="M118,62 Q128,57 140,62" stroke="#1F242D" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-                                        <circle cx="91" cy="72" r="4.5" fill="#291A12"/>
-                                        <circle cx="129" cy="72" r="4.5" fill="#291A12"/>
-                                        <path d="M110,72 L107,91 Q110,95 115,91" stroke="#9E623E" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-                                        <path d="M94,104 Q110,114 126,104" stroke="#7C3F2C" stroke-width="3" stroke-linecap="round" fill="none"/>
-                                    </svg>
-                                </div>
-                            </div>
+                <!-- 3 Boutons d'action principaux alignés sur UNE SEULE LIGNE -->
+                <div class="flex flex-wrap sm:flex-nowrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+                    <a href="#projets" class="px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 shadow-xl shadow-purple-600/25 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
+                        <span>Découvrir mes réalisations</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
 
-                            <!-- Bandeau d'information sous la photo -->
-                            <div class="mt-4 pt-3 border-t border-purple-500/20 flex items-center justify-between text-xs font-mono">
-                                <span class="text-slate-300 flex items-center gap-2">
-                                    <i class="fa-solid fa-graduation-cap text-purple-400"></i>
-                                    IUT de Bordeaux
-                                </span>
-                                <span class="px-2.5 py-1 rounded-lg bg-pink-500/15 border border-pink-500/30 text-pink-300 font-semibold">
-                                    Stage : 18/01/2027
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="CV_Mouad_MOUJTAHID.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-100 bg-dark-800/95 hover:bg-dark-700 border border-purple-500/30 inline-flex items-center justify-center gap-2.5 transition-all whitespace-nowrap shrink-0">
+                        <i class="fa-solid fa-file-pdf text-pink-400"></i>
+                        <span>Télécharger mon CV (PDF)</span>
+                    </a>
+
+                    <a href="#contact" class="px-6 py-3.5 rounded-xl font-medium text-sm text-slate-300 hover:text-white hover:bg-white/5 border border-purple-500/20 inline-flex items-center justify-center transition-all whitespace-nowrap shrink-0">
+                        Me contacter
+                    </a>
                 </div>
 
+                <!-- Grille 2x2 parfaitement alignée pour LinkedIn, Mail complet, Localisation, Âge & Permis B -->
+                <div class="pt-7 border-t border-purple-500/15 grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left">
+                    
+                    <!-- 1. LinkedIn -->
+                    <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-purple-400/50 transition-all group">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-purple-300 shrink-0 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-linkedin-in text-base"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <span class="text-[11px] font-mono text-slate-400 block leading-tight">LinkedIn</span>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-purple-300 block truncate">linkedin.com/in/mouad-moujtahid</span>
+                        </div>
+                    </a>
+
+                    <!-- 2. Email Universitaire (affiché en entier sans coupure) -->
+                    <button type="button" onclick="copyText('mouad.moujtahid@etu.u-bordeaux.fr', 'Adresse e-mail copiée !')" class="flex items-center justify-between gap-2 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20 hover:border-pink-400/50 transition-all group text-left">
+                        <div class="flex items-center gap-3.5 min-w-0 flex-1">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-300 shrink-0 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                                <i class="fa-regular fa-envelope text-base"></i>
+                            </div>
+                            <div class="min-w-0 flex-1">
+                                <span class="text-[11px] font-mono text-slate-400 block leading-tight">Adresse e-mail</span>
+                                <span class="text-xs sm:text-sm font-semibold text-slate-200 group-hover:text-pink-300 block whitespace-nowrap">mouad.moujtahid@etu.u-bordeaux.fr</span>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-copy text-xs text-slate-400 group-hover:text-pink-300 shrink-0" title="Copier"></i>
+                    </button>
+
+                    <!-- 3. Localisation -->
+                    <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20">
+                        <div class="w-10 h-10 rounded-xl bg-fuchsia-500/15 border border-fuchsia-500/30 flex items-center justify-center text-fuchsia-300 shrink-0">
+                            <i class="fa-solid fa-location-dot text-base"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <span class="text-[11px] font-mono text-slate-400 block leading-tight">Localisation</span>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-200 block">Bordeaux (33) &bull; IUT de Bordeaux</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Âge & Permis B -->
+                    <div class="flex items-center gap-3.5 p-4 rounded-2xl bg-dark-900/85 border border-purple-500/20">
+                        <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center text-violet-300 shrink-0">
+                            <i class="fa-solid fa-id-card text-base"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <span class="text-[11px] font-mono text-slate-400 block leading-tight">Profil &amp; Mobilité</span>
+                            <span class="text-xs sm:text-sm font-semibold text-slate-200 block">19 ans &bull; Permis B</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -980,35 +915,35 @@
                     <!-- Colonne Droite : Formulaire d'envoi d'e-mail (2 champs) -->
                     <div class="lg:col-span-6 bg-dark-900/90 rounded-2xl p-6 sm:p-8 border border-purple-500/25">
                         <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2.5">
-                            <i class="fa-regular fa-comment-dots text-pink-400"></i>
-                            <span>M'envoyer un message rapide</span>
-                        </h3>
-                        <p class="text-xs text-slate-400 mb-5 leading-relaxed">
-                            Remplissez ces deux champs pour ouvrir votre messagerie avec un e-mail pré-rempli adressé à <code class="text-pink-300">mouad.moujtahid@etu.u-bordeaux.fr</code>.
-                        </p>
+                    <!-- Colonne Droite : Accès direct E-mail & CV sans formulaire -->
+                    <div class="lg:col-span-6 bg-dark-900/90 rounded-2xl p-6 sm:p-8 border border-purple-500/25 flex flex-col justify-between space-y-6">
+                        <div class="space-y-3">
+                            <h3 class="text-xl font-bold text-white flex items-center gap-2.5">
+                                <i class="fa-regular fa-paper-plane text-pink-400"></i>
+                                <span>Me contacter directement</span>
+                            </h3>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Cliquez sur le bouton ci-dessous pour ouvrir directement votre boîte mail avec mon adresse <code class="text-pink-300 font-mono">mouad.moujtahid@etu.u-bordeaux.fr</code> en destinataire, ou consultez mon CV au format PDF.
+                            </p>
+                        </div>
 
-                        <form onsubmit="handleQuickMail(event)" class="space-y-4">
-                            <div>
-                                <label for="contact-name" class="block text-xs font-mono text-slate-300 mb-1.5">Votre Nom / Entreprise *</label>
-                                <input type="text" id="contact-name" required placeholder="Ex: Marie Dupont - Capgemini" class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-purple-500/30 text-sm text-white focus:outline-none focus:border-pink-500">
-                            </div>
+                        <div class="space-y-3 pt-2">
+                            <a href="mailto:mouad.moujtahid@etu.u-bordeaux.fr" class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/25 flex items-center justify-center gap-2.5 transition-all">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>M'envoyer un e-mail</span>
+                            </a>
 
-                            <div>
-                                <label for="contact-message" class="block text-xs font-mono text-slate-300 mb-1.5">Votre Message *</label>
-                                <textarea id="contact-message" rows="4" required placeholder="Bonjour Mouad, nous souhaiterions échanger avec vous au sujet d'un stage..." class="w-full px-3.5 py-2.5 rounded-xl bg-dark-950 border border-purple-500/30 text-sm text-white focus:outline-none focus:border-pink-500"></textarea>
-                            </div>
-
-                            <div class="flex flex-wrap items-center gap-3 pt-1">
-                                <button type="submit" class="flex-1 py-3 px-5 rounded-xl bg-gradient-to-r from-violet-600 to-pink-600 hover:from-violet-500 hover:to-pink-500 text-white font-semibold text-sm shadow-lg shadow-purple-600/25 flex items-center justify-center gap-2 transition-all">
-                                    <i class="fa-solid fa-paper-plane"></i>
-                                    <span>Envoyer par Email</span>
-                                </button>
-                                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="py-3 px-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 text-sm font-medium border border-purple-500/25 flex items-center gap-2">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <a href="CV_Mouad_MOUJTAHID.pdf" target="_blank" rel="noopener noreferrer" class="py-3 px-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 hover:text-white text-sm font-medium border border-purple-500/25 flex items-center justify-center gap-2 transition-all">
                                     <i class="fa-solid fa-file-pdf text-pink-400"></i>
                                     <span>Mon CV</span>
                                 </a>
+                                <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="py-3 px-4 rounded-xl bg-dark-800 hover:bg-dark-700 text-slate-200 hover:text-white text-sm font-medium border border-purple-500/25 flex items-center justify-center gap-2 transition-all">
+                                    <i class="fa-brands fa-linkedin-in text-purple-400"></i>
+                                    <span>Mon LinkedIn</span>
+                                </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                 </div>
@@ -1024,7 +959,7 @@
                 <span>&copy; 2026 <strong>Mouad MOUJTAHID</strong> &bull; BUT Informatique &amp; DU IA (IUT de Bordeaux)</span>
             </div>
             <div class="flex items-center gap-5">
-                <a href="CV_Mouad_MOUJTAHID.pdf" download="CV_Mouad_MOUJTAHID.pdf" onclick="forceDownloadCV(event)" class="hover:text-white transition-colors">Télécharger mon CV</a>
+                <a href="CV_Mouad_MOUJTAHID.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Télécharger mon CV</a>
                 <a href="https://www.linkedin.com/in/mouad-moujtahid" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors">LinkedIn</a>
                 <a href="#accueil" class="hover:text-white transition-colors"><i class="fa-solid fa-arrow-up mr-1"></i>Haut de page</a>
             </div>
@@ -1345,6 +1280,23 @@
                         <rect x="452" y="280" width="120" height="44" rx="6" fill="#E2E8F0" stroke="#64748B"/>
                         <text x="490" y="307" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600">Quitter</text>
                     </svg>`;
+                case 'labyrinthe':
+                    return `
+                    <svg viewBox="0 0 600 360" class="w-full h-full bg-[#1E2433]">
+                        <rect x="130" y="12" width="340" height="336" fill="#232B3A" stroke="#CBD5E1" stroke-width="8"/>
+                        <g stroke="#CBD5E1" stroke-width="8" stroke-linecap="square">
+                            <line x1="130" y1="60" x2="240" y2="60"/><line x1="280" y1="60" x2="410" y2="60"/>
+                            <line x1="180" y1="60" x2="180" y2="140"/><line x1="240" y1="100" x2="360" y2="100"/>
+                            <line x1="360" y1="60" x2="360" y2="180"/><line x1="130" y1="180" x2="300" y2="180"/>
+                            <line x1="230" y1="140" x2="230" y2="260"/><line x1="300" y1="220" x2="470" y2="220"/>
+                            <line x1="180" y1="260" x2="380" y2="260"/><line x1="410" y1="140" x2="410" y2="300"/>
+                            <line x1="180" y1="300" x2="340" y2="300"/>
+                        </g>
+                        <circle cx="340" cy="80" r="8" fill="#4ADE80"/>
+                        <circle cx="210" cy="120" r="7" fill="#60A5FA"/>
+                        <circle cx="310" cy="200" r="7" fill="#60A5FA"/>
+                        <circle cx="260" cy="280" r="7" fill="#60A5FA"/>
+                    </svg>`;
             }
         }
 
@@ -1457,7 +1409,7 @@
                 tags: ['Linux', 'Réseau', 'Nextcloud'],
                 images: [
                     'ImagesIllustration/InstallationDeServicesReseaux1.png',
-                    'ImagesIllustration/InstallationDeServicesReseaux2.jpg'
+                    'ImagesIllustration/InstallationDeServicesReseaux2.png'
                 ],
                 svgType: 'reseau',
                 summary: "Déploiement d'une infrastructure réseau virtuelle sous Debian Linux et intégration des services collaboratifs Nextcloud et OnlyOffice.",
@@ -1479,6 +1431,20 @@
                 kpis: "Application fonctionnelle avec séparation entre la logique métier et l'interface graphique (IHM). Résolution des épreuves validée par des tests unitaires.",
                 skills: ['Programmation C#', 'Conception UML', 'Développement IHM', 'Tests unitaires'],
                 tools: ['Visual Studio / .NET', 'WinForms', 'Git']
+            },
+            {
+                id: 'labyrinthe',
+                title: 'Labyrinthe',
+                team: 'En solo • 2 semaines',
+                categories: ['logiciel'],
+                tags: ['Java', 'JavaFX', 'POO'],
+                images: ['ImagesIllustration/Labyrinthe.png'],
+                svgType: 'labyrinthe',
+                summary: "Jeu de labyrinthe multi-étages en Java/JavaFX, développé seul : héros piloté au clavier, monstres autonomes et déplacements fluides.",
+                cahierDesCharges: "Concevoir seul, en deux semaines, un jeu de labyrinthe complet en Java/JavaFX pour remobiliser la programmation orientée objet. Contraintes : implémenter des interfaces imposées sans les modifier, valider les objectifs dans l'ordre et livrer un programme sans erreur ni avertissement sur les postes de l'IUT.",
+                kpis: "Labyrinthe sur plusieurs étages chargé depuis des fichiers texte, héros jouable au clavier et monstres autonomes grâce au polymorphisme. La logique du jeu est séparée du rendu, ce qui donne un déplacement fluide au pixel près. Plus de 50 commits sur GitLab, projet validé sur les postes de l'IUT.",
+                skills: ['Programmation orientée objet', 'Interface graphique événementielle', 'Débogage', 'Versionnage Git'],
+                tools: ['Java', 'JavaFX', 'Maven', 'Git / GitLab']
             }
         ];
 
@@ -1671,50 +1637,6 @@
             setTimeout(() => {
                 toast.classList.add('translate-y-20', 'opacity-0');
             }, 3000);
-        }
-
-        /* Téléchargement direct du CV en PDF sans ouvrir d'onglet dans Chrome */
-        async function forceDownloadCV(event) {
-            if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
-                event.preventDefault();
-                try {
-                    const response = await fetch('CV_Mouad_MOUJTAHID.pdf');
-                    if (!response.ok) throw new Error('Fichier introuvable');
-                    const blob = await response.blob();
-                    const octetBlob = new Blob([blob], { type: 'application/octet-stream' });
-                    const blobUrl = window.URL.createObjectURL(octetBlob);
-                    const tempLink = document.createElement('a');
-                    tempLink.style.display = 'none';
-                    tempLink.href = blobUrl;
-                    tempLink.setAttribute('download', 'CV_Mouad_MOUJTAHID.pdf');
-                    document.body.appendChild(tempLink);
-                    tempLink.click();
-                    document.body.removeChild(tempLink);
-                    setTimeout(() => window.URL.revokeObjectURL(blobUrl), 1500);
-                    showToast('Téléchargement du CV lancé !');
-                } catch (error) {
-                    const fallbackLink = document.createElement('a');
-                    fallbackLink.href = 'CV_Mouad_MOUJTAHID.pdf';
-                    fallbackLink.setAttribute('download', 'CV_Mouad_MOUJTAHID.pdf');
-                    document.body.appendChild(fallbackLink);
-                    fallbackLink.click();
-                    document.body.removeChild(fallbackLink);
-                }
-            } else {
-                showToast('Téléchargement du CV...');
-            }
-        }
-
-        /* Préparation de l'e-mail à partir des 2 champs du formulaire */
-        function handleQuickMail(event) {
-            event.preventDefault();
-            const name = document.getElementById('contact-name').value.trim();
-            const message = document.getElementById('contact-message').value.trim();
-
-            const fullSubject = encodeURIComponent(`Proposition de stage - ${name}`);
-            const fullBody = encodeURIComponent(`${message}\n\n${name}`);
-            window.location.href = `mailto:mouad.moujtahid@etu.u-bordeaux.fr?subject=${fullSubject}&body=${fullBody}`;
-            showToast('Ouverture de votre messagerie...');
         }
 
         window.addEventListener('keydown', (e) => {
